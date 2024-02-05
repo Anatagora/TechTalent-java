@@ -16,8 +16,8 @@ public class Ejercicio2App {
 		System.out.println("Variable N: "+N);
 		System.out.println("Variable A: "+A);
 		System.out.println("Variable C: "+C);
-		System.out.println("suma: "+suma);
-		System.out.println("resta: "+resta);
+		System.out.println("Suma: "+suma);
+		System.out.println("Resta: "+resta);
 		System.out.println("Valor del número del carácter X: "+valorC);
 				
 	}

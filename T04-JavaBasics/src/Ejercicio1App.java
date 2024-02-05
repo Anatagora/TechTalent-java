@@ -13,11 +13,11 @@ public class Ejercicio1App {
 		int multiplicación=a*b;
 		int división=a/b;
 		int módulo=a%b;
-		System.out.println("suma: " + suma);
-		System.out.println("resta: " + resta);
-		System.out.println("multiplicación: " + multiplicación);
-		System.out.println("división: " + división);
-		System.out.println("módulo: " + módulo);
+		System.out.println("Suma: " + suma);
+		System.out.println("Resta: " + resta);
+		System.out.println("Multiplicación: " + multiplicación);
+		System.out.println("División: " + división);
+		System.out.println("Módulo: " + módulo);
 		
 		
 	}
