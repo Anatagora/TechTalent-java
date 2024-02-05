@@ -12,7 +12,7 @@ public class Ejercicio5App {
 		int B=560;
 		int C=25;
 		int D=36; 
-		int antiguoB=B;
+		//int antiguoB=B;
 		
 		B=C; 
 		C=A; 
