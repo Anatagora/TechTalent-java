@@ -20,11 +20,12 @@ public class Ejercicio5App {
 		D=B; 
 		//D=antiguoB;
 		
-		System.out.println("Valor de B:" +B);
-		System.out.println("Valor de C:" +C);
-		System.out.println("Valor de A:" +A);
-		System.out.println("Valor de D:" +D);
-		
+		 System.out.println("Valor de B: "+B+
+		 "\n"+ "Valor de C: "+C +
+		 "\n"+ "Valor de A: "+A +
+		 "\n"+ "Valor de D"); 
+		 
+		 
 		// Los valores toman el valor antiguo?? O por el contrario, es una cuestión secuencial y toma el valor actual ??
 	}
 

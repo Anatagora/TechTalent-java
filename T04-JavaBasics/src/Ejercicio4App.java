@@ -14,11 +14,13 @@ public class Ejercicio4App {
 		
 		//El valor de N evoluciona en función de las acciones que se hacen, por lo tanto hay que tener en cuenta dichas acciones
 		// Lo que se quiere mostrar varia en función de la operación anteriormente realizada
+
 		
-		System.out.println("Valor inicial de N: "+ N);
-		System.out.println("Suma N+77: "+ suma);
-		System.out.println("Resta N-3: "+ resta);
-		System.out.println("Doble de N: "+ multiplicacion);
+		 System.out.println("Valor inicial de N:" +N +
+		 "\n"+ "Suma N+77: "+suma+
+		 "\n"+ "Resta N-3: "+resta+
+		 "\n"+ "Doble de N: " +multiplicacion);
+		 
 		
 	}
 

@@ -13,12 +13,14 @@ public class Ejercicio2App {
 		double suma=N+A;
 		double resta=N-A;
 		int valorC=(int)C; 
-		System.out.println("Variable N: "+N);
-		System.out.println("Variable A: "+A);
-		System.out.println("Variable C: "+C);
-		System.out.println("Suma: "+suma);
-		System.out.println("Resta: "+resta);
-		System.out.println("Valor del número del carácter X: "+valorC);
+		
+		 System.out.println("Variable N: "+N +
+				 "\n" + "Variable A: "+A +
+				 "\n"+ "Variable C:" +C +
+				 "\n" + "Suma: "+suma +
+				 "\n" + "Resta"+resta + 
+				 "\n" + "Valor del número del carácter X: " +valorC); 
+	
 				
 	}
 
