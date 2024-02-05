@@ -33,6 +33,8 @@ public class PruebaRelaciónApp {
         System.out.println("¿" +operador1+ "es mayor que" +operador2+"? " +resultado6);
         System.out.println("¿" +operador1+ "es mayor o igual que" +operador3+ "? " +resultado7);
         System.out.println("¿" +operador1+ "es mayor o igual a" +operador2+ "? " +resultado8);
+        System.out.printf("¿%d es mayor o igual a %d? %b/n", operador1,operador2, resultado1);
+        // %d indica la referencia de la variable que declaras despues
 
 	}
 
