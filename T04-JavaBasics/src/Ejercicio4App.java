@@ -17,9 +17,9 @@ public class Ejercicio4App {
 
 		
 		 System.out.println("Valor inicial de N:" +N +
-		 "\n"+ "Suma N+77: "+suma+
-		 "\n"+ "Resta N-3: "+resta+
-		 "\n"+ "Doble de N: " +multiplicacion);
+				 "\n"+ "Suma N+77: "+suma+
+				 "\n"+ "Resta N-3: "+resta+
+				 "\n"+ "Doble de N: " +multiplicacion);
 		 
 		
 	}
