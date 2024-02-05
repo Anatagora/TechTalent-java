@@ -12,21 +12,21 @@ public class Ejercicio5App {
 		int B=560;
 		int C=25;
 		int D=36; 
-		//int antiguoB=B;
+		int antiguoB=B;
 		
 		B=C; 
 		C=A; 
 		A=D; 
 		D=B; 
-		//D=antiguoB;
+		D=antiguoB;
 		
 		 System.out.println("Valor de B: "+B+
 				 "\n"+ "Valor de C: "+C +
 				 "\n"+ "Valor de A: "+A +
-				 "\n"+ "Valor de D"); 
+				 "\n"+ "Valor de D: "+antiguoB); 
 		 
 		 
-		// Los valores toman el valor antiguo?? O por el contrario, es una cuestión secuencial y toma el valor actual ??
+		// Los valores toman el valor inicial?? O por el contrario, es una cuestión secuencial y toma el valor actual ??
 	}
 
 }
