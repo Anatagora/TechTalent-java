@@ -36,7 +36,7 @@ public class Ejercicio3App {
 		double resto1=N%M;
 		
 		
-		 System.out.println("Suma N+M: "+suma+
+		 System.out.println("Suma N+M: "+suma1+
 				 "\n" +"Resta N-M: "+resta1 +
 				 "\n"+ "MultiplicaciónN*M: "+multiplicación1 +
 				 "\n"+ "División N/M: "+división1 +
