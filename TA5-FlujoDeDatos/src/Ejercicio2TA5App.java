@@ -1,5 +1,5 @@
 
-public class Ejercicio52App {
+public class Ejercicio2TA5App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
