@@ -2,7 +2,7 @@
 public class Ejercicio1TA5App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		/**
 		 * Declara 2 variables numéricas (con el valor que desees), 
 		 * he indica cual es mayor de los dos. Si son iguales indicarlo también. 
