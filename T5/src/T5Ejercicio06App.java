@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Ejercicio6TAApp {
+public class T5Ejercicio06App {
 
 	public static void main(String[] args) {
 	/**
@@ -9,13 +9,14 @@ public class Ejercicio6TAApp {
 	 * El IVA sera una constante que sera del 21%
 	 */
 	
-	String precio= JOptionPane.showInputDialog("Introduce precio del producto ");
 	
-	double precio1 = Double.parseDouble(precio); 
+	double precio = Double.parseDouble(JOptionPane.showInputDialog(
+			"Introduce precio del producto ")); 
 	final double IVA=(0.21);  
-	double precioFinal = (precio1* IVA)+ precio1; 
+	double precioFinal = (precio* IVA)+ precio; 
 	
-	JOptionPane.showMessageDialog(null,"Precio final con IVA  " +precioFinal); 
+	JOptionPane.showMessageDialog(null, 
+			"Precio final con IVA  " +precioFinal); 
 
 	
 	}

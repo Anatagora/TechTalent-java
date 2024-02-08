@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Ejercicio3TA5App {
+public class T5Ejercicio03App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,8 +10,6 @@ public class Ejercicio3TA5App {
 		 * queremos introducir(recuerda usar JOptionPane)
 		 */
 		String nombre= JOptionPane.showInputDialog("Introduce tu nombre"); 
-		//if (nombre != null && !nombre.isEmpty)
-//		System.out.println("Bien, tu nombre es " +nombre);
 		JOptionPane.showMessageDialog(null,"Bien, tu nombre es " +nombre); 
 	}
 

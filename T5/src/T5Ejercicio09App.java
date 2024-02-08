@@ -1,5 +1,5 @@
 
-public class Ejercicio9TA5App {
+public class T5Ejercicio09App {
 
 	public static void main(String[] args) {
 		/**
