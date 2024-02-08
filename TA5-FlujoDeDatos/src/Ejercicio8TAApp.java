@@ -8,8 +8,8 @@ public class Ejercicio8TAApp {
 	 */
 	for(int num=1; num<101; num++) {
 		System.out.println(num);
-	}
 		
 	}
 
+	}
 }

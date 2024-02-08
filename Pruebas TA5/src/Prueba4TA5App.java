@@ -17,7 +17,7 @@ public class Prueba4TA5App {
 		
 		int variableLocal1=20; 
 		if(variableGlobal==10) {
-			int variableLOcal2=30; 
+			int variableLocal2=30; 
 			System.out.println("La variable local 1 vale " +variableLocal1);
 		}
 //		System.out.println("La variable local 2 vale " +variableLocal2); 
