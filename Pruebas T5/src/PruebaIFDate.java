@@ -4,14 +4,10 @@ import java.text.SimpleDateFormat;
 public class PruebaIFDate {
 
 	public static void main(String[] args) {
-	// Ejercicio saludo con la hora del día
-	//Con el uso de swith y de Date() determinar la hora del día
-	// y asignarlo a una variable que se compare con el swith y
-	// nos salude en base al valor de esta hora. 
 	
-		Date hora = new Date(); 
+		Date fecha = new Date(); 
 		SimpleDateFormat formatoHora= new SimpleDateFormat("HH");
-		int HoraDia = Integer.parseInt(formatoHora.format(hora));
+		int HoraDia = Integer.parseInt(formatoHora.format(fecha));
 		
 		String saludo;
 		
@@ -23,8 +19,7 @@ public class PruebaIFDate {
 			saludo ="Buenas tardes"; 
 			break;
 			default: 
-			System.out.println("No has introducido la hora correcta");
-		return;
+			saludo= "No es la hora";
 	}
 	System.out.println(saludo);
 	}
