@@ -12,10 +12,10 @@ public class PruebaIFDate {
 		String saludo;
 		
 	switch(HoraDia) {
-			case 9: 
+			case 20: 
 			saludo= "Buenos días"; 
 			break; 
-			case 10: 
+			case 21: 
 			saludo ="Buenas tardes"; 
 			break;
 			default: 
