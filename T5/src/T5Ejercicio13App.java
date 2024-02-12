@@ -19,30 +19,30 @@ public class T5Ejercicio13App {
 	String signo = sc2.nextLine(); 
 	//sc2.close(); 
 	
-	double numInt = Integer.parseInt(operando1); 
-	double numInt2 = Integer.parseInt(operando2);  
+	double a = Integer.parseInt(operando1); 
+	double b = Integer.parseInt(operando2);  
 	String signoOperacion = signo; 
 	
 	double resultado=0; 
 	
 	switch (signoOperacion) {
 	case "+": 
-		resultado= numInt + numInt2;
+		resultado= a + b;
 		break;
 	case "-": 
-		resultado= numInt - numInt2;
+		resultado= a - b;
 		break;
 	case "*": 
-		resultado= numInt * numInt2;
+		resultado= a * b;
 		break;
 	case "/": 
-		resultado= numInt / numInt2;
+		resultado= a / b;
 		break;
 	case "^": 
-		resultado= Math.pow(numInt, numInt2);
+		resultado= Math.pow(a, b);
 		break;
 	case "%": 
-		resultado= numInt % numInt2;
+		resultado= a % b;
 		break;
 		default: 
 			System.out.println("error"); 
