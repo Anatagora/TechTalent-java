@@ -9,7 +9,7 @@ public class T5Ejercicio09App {
 		
 		  for (int num = 1; num < 101; num++) {
 	            if (num % 2 == 0 && num % 3 == 0) {
-	                System.out.println("Divisible entre 2 y 3: " + num);
+	                System.out.println( + num);
 	            } else if (num % 2 == 0) {
 	                System.out.println("Divisible entre 2: " + num);
 	            } else if (num % 3 == 0) {

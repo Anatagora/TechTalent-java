@@ -4,22 +4,22 @@ public class T5Ejercicio12App {
 
 	public static void main(String[] args) {
 		
-		String contraseñaCorrecta = "1234"; 
+		String pass = "1234"; 
 		int numeroIntentos =3;
 		
-		for(int intento =1; intento<=numeroIntentos; intento++ ) {
+		for(int cont =1; cont<=numeroIntentos; cont++ ) {
 			Scanner sc= new Scanner(System.in); 
 			System.out.println("Introduce la contraseña ");  
-			String cont = sc.nextLine(); 
+			String pass1 = sc.nextLine(); 
 		
-			if (cont == contraseñaCorrecta) {
-				System.out.println("Contraseña correcta");
+			if (pass1.equals(pass)) {
+				System.out.println("¡Enhorabuena! Contraseña correcta");
 				break;
 			} else {
 				System.out.println("Contraseña incorrecta");
 			}
 			
-			if(intento== numeroIntentos) {
+			if(cont== numeroIntentos) {
 				System.out.println("No te quedan más intentos.");
 			}
 		}

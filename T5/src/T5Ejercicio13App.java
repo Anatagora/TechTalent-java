@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class T5Ejercicio13App {
 
 	public static void main(String[] args) {
@@ -35,8 +37,12 @@ public class T5Ejercicio13App {
 	case "*": 
 		resultado= a * b;
 		break;
-	case "/": 
-		resultado= a / b;
+	case "/":  
+		if(b ==0) {
+			System.out.println("No se puede dividir por 0");
+		}else { 
+			resultado= a / b;
+		}
 		break;
 	case "^": 
 		resultado= Math.pow(a, b);
@@ -46,8 +52,11 @@ public class T5Ejercicio13App {
 		break;
 		default: 
 			System.out.println("error"); 
+			
 	}
-	System.out.println("El resultado es " + resultado); 
+	JOptionPane.showMessageDialog(null, 
+			"El resultado es  " + resultado); 
+	
 	}
 
 }
