@@ -11,9 +11,7 @@ public class T5Ejercicio11App {
 		Scanner sc= new Scanner(System.in); 
 		System.out.println("Introduce el día ");  
 		String dia = sc.nextLine(); 
-		
-//		dia = dia.toLowerCase();
-		
+
 		String resultado=""; 
 		
 		switch(dia) {

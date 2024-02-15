@@ -4,10 +4,7 @@ import javax.swing.JOptionPane;
 public class T5Ejercicio05App {
 
 	public static void main(String[] args) {
-		/**
-		 *Lee un número por teclado e indica si es divisible entre 2 (resto = 0). 
-		 *Si no lo es, también debemos indicarlo. 
-		 */
+
 		String num= JOptionPane.showInputDialog("Introduce un número "); 
 		int numero= Integer.parseInt(num);
 
