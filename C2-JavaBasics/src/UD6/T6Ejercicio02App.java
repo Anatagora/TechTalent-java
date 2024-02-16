@@ -2,7 +2,7 @@ package UD6;
 
 import javax.swing.JOptionPane;
 
-public class T6Ejercicio2App {
+public class T6Ejercicio02App {
 
 	public static void main(String[] args) {
 	
