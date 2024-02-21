@@ -2,7 +2,7 @@ package UD6;
 
 import java.util.Scanner;
 
-public class T6Ejercicio06 {
+public class T6Ejercicio06App {
 
 	public static void main(String[] args) {
 	
@@ -12,6 +12,8 @@ public class T6Ejercicio06 {
 		int nCifras= cifras(num); 
 	 
 		System.out.println("El número de cifras de "+num+ " es "+nCifras);
+		
+		sc.close();
 	}
 	
 	public static int cifras(String n1) {

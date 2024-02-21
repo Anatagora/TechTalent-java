@@ -11,16 +11,18 @@ public class T6Ejercicio04App {
 	
 		int numero =Integer.parseInt(num);
 		System.out.println(Factorial(numero));
+		
+		sc.close();
 	}
 	
-	public static int Factorial(int n1) {
-		int fact=1; 
+	public static int Factorial(int fact) {
+		int resultado=1; 
 		
-		while (n1>0) {
-			fact = fact * n1;
-			n1--;
+		while (fact>1) {
+			resultado = resultado *= fact;
+			fact--;
 		}
 	
-		return fact; 
+		return resultado; 
 	}
 }
