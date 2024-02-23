@@ -19,6 +19,7 @@ public class T6Ejercicio07App {
 		System.out.println("La cantidad " +euro +" convertida a "+moneda + " es: "+qConvertida ); 
 		
 		sc.close();
+		sc1.close();
 	}
 
 	public static double conversor (double q,String m) {

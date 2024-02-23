@@ -11,11 +11,9 @@ public class T6Ejercicio01App {
 		
 		switch (poligono.toLowerCase()) {
 			case "circulo":
-				//1. Crear variable(s) de parametro(s)
-				//2. Pedir los valores
 				double var1 = Double.parseDouble(JOptionPane
 						.showInputDialog("Dame el radio: "));
-				//3. Llamar al método y mostrar
+				
 				double resultado=Math.round(circulo(var1));
 				JOptionPane.showMessageDialog(null, "El resultado del "
 						+ "área del circulo es: " 
@@ -23,13 +21,12 @@ public class T6Ejercicio01App {
 				break;
 			
 			case "triangulo":
-				//1. Crear variable(s) de parametro(s)
-				//2. Pedir los valores
+				
 				double var2 = Double.parseDouble(JOptionPane
 						.showInputDialog("Dame la base: "));
 				double var3 = Double.parseDouble(JOptionPane
 						.showInputDialog("Dame la altura: "));
-				//3. Llamar al método y mostrar
+				
 				double resultado2=Math.round(triangulo(var2, var3));
 				JOptionPane.showMessageDialog(null, "El resultado del "
 						+ "área del triangulo es: " 
@@ -37,11 +34,10 @@ public class T6Ejercicio01App {
 				break;
 				
 			case "cuadrado":
-				//1. Crear variable(s) de parametro(s)
-				//2. Pedir los valores
+			
 				double var4 = Double.parseDouble(JOptionPane
 						.showInputDialog("Dame un lado: "));
-				//3. Llamar al método y mostrar
+				
 				double resultado3=Math.round(cuadrado(var4));
 				JOptionPane.showMessageDialog(null, "El resultado del "
 						+ "área del cuadrado es: " 
