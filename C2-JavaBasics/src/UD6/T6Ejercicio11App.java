@@ -18,8 +18,8 @@ public class T6Ejercicio11App {
 		llenarArrayRandom(array1);
 		mostrarValores(array1); 
 		
-//		rellenarArray2(array1, array2);
-		llenarArrayRandom(array2);
+		rellenarArray2(array1, array2);
+//		llenarArrayRandom(array2);
 		mostrarValores(array2);
 		
 		newArray= multiplicaArray(array1, array2);
@@ -35,13 +35,12 @@ public class T6Ejercicio11App {
 		
 	}
 	
-	public static int[] rellenarArray2(int[] a1, int[] a2) {
-		int array2[] = new int [a1.length]; 
-		for (int i = 0; i < array2.length; i++) {
-			if(i==a1[i]) {
-			}
+	public static void rellenarArray2(int[] a1, int[] a2) {
+		Random random= new Random(); 
+		
+		for (int i = 0; i < a2.length; i++) {
+			a2[i]= a1[i]*random.nextInt(100);
 		}
-		return array2;
 	}
 	
 	 public static void mostrarValores(int[]array) {
@@ -56,7 +55,7 @@ public class T6Ejercicio11App {
 			
 		}
 	 }
-	 public static int[] multiplicaArray(int []a1, int[] a2) {
+	 public static int[] multiplicaArray(int[] a1, int[] a2) {
 		 int newArray[] = new int[a1.length];
 		 for (int i = 0; i < newArray.length; i++) {
 			newArray[i]= a1[i] * a2[i]; 

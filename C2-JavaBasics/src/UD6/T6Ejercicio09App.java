@@ -31,9 +31,9 @@ public class T6Ejercicio09App {
 		
 		int suma=0; 
 		for (int i = 0; i < array.length; i++) {
-			//añadir if, if else, else para el system out y que se vea como un array if(i==0)
+			
 			System.out.println("Valor" +(i+1)+": "+array[i]);
-			suma = array[i]+ suma; // suma+= array[i] se suma sobre si mismo
+			suma = array[i]+ suma; 
 			
 		}
 		return suma;

@@ -8,8 +8,11 @@ public class T6Ejercicio06App {
 	
 		Scanner sc = new Scanner(System.in); 
 		System.out.println("Introduce un número entero positivo");
-		String num = sc.nextLine();   
-		int nCifras= cifras(num); 
+		int num = sc.nextInt(); 
+		num = Math.abs(num);
+		
+		String numEnString = String.valueOf(num);
+		int nCifras= cifras(numEnString); 
 	 
 		System.out.println("El número de cifras de "+num+ " es "+nCifras);
 		
@@ -18,7 +21,6 @@ public class T6Ejercicio06App {
 	
 	public static int cifras(String n1) {
 		int resultado = n1.length();
-		
 		return resultado; 
 	}
 }

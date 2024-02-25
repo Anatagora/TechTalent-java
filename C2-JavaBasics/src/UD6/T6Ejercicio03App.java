@@ -17,6 +17,7 @@ public class T6Ejercicio03App {
 	        } else {
 	            System.out.println("El número " + numero + " no es primo");
 	        }
+	        sc.close();
 	    }
 
 	    public static boolean primo(int n1) {

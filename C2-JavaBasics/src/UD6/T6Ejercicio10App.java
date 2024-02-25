@@ -8,24 +8,34 @@ public class T6Ejercicio10App {
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in); 
 		System.out.println("Indica el tamaño del array");
-		int tamaño = sc.nextInt(); 
+		int tamanno = sc.nextInt(); 
 		
-		int n1[] = new int[tamaño];
+		int n1[] = new int[tamanno];
 		
 		llenarArrayRandom(n1); 
 		mostrarValores(n1);
 		System.out.println("\nEl valor máximo es: "+valorMaximo(n1));
+		sc.close();
 	}
 	public static void llenarArrayRandom(int[]array) {
 		Random random= new Random();
+		Scanner sc= new Scanner(System.in); 
+		System.out.println("Indica el primer valor inicial del rango");
+		int rangoInicial = sc.nextInt(); 
+		
+		Scanner sc1= new Scanner(System.in); 
+		System.out.println("Indica el valor final del rango ");
+		int rangoFinal = sc1.nextInt(); 
+		
 		for (int i = 0; i < array.length; i++) {
-			int posibleNumero = random.nextInt(10);
+			int posibleNumero = random.nextInt(rangoInicial,rangoFinal);
 			while (esPrimo(posibleNumero) == false) {
-			posibleNumero= random.nextInt(10);	
+			posibleNumero= random.nextInt(rangoInicial,rangoFinal);	
 			}
 				array[i] = posibleNumero;
 		}
-		
+		sc.close();
+		sc1.close();
 	}
 	
 	 public static boolean esPrimo(int n1) {
