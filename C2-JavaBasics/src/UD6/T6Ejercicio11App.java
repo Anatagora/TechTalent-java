@@ -19,7 +19,6 @@ public class T6Ejercicio11App {
 		mostrarValores(array1); 
 		
 		rellenarArray2(array1, array2);
-//		llenarArrayRandom(array2);
 		mostrarValores(array2);
 		
 		newArray= multiplicaArray(array1, array2);
