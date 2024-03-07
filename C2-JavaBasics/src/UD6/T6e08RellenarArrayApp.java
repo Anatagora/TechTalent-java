@@ -3,7 +3,7 @@ package UD6;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class T6Ejercicio08App {
+public class T6e08RellenarArrayApp {
 
 	public static void main(String[] args) {
 	

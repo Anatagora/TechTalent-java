@@ -2,7 +2,7 @@ package UD6;
 
 import java.util.Scanner;
 
-public class T6Ejercicio07App {
+public class T6e07ConversorMonedasApp {
 
 	public static void main(String[] args) {
 	

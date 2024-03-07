@@ -3,7 +3,7 @@ package UD6;
 import java.util.Random;
 import java.util.Scanner;
 
-public class T6Ejercicio10App {
+public class T6e10MaxArrayApp {
 
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in); 

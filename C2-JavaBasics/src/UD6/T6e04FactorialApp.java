@@ -2,7 +2,7 @@ package UD6;
 
 import java.util.Scanner;
 
-public class T6Ejercicio04App {
+public class T6e04FactorialApp {
 
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in); 

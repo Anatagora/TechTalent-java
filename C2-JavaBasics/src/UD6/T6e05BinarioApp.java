@@ -1,9 +1,8 @@
 package UD6;
 
-import java.nio.file.FileSystemNotFoundException;
 import java.util.Scanner;
 
-public class T6Ejercicio05App {
+public class T6e05BinarioApp {
 
 	public static void main(String[] args) {
 	

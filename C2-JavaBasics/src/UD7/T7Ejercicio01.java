@@ -1,7 +1,6 @@
 package UD7;
 
 import java.util.Hashtable;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class T7Ejercicio01 {
@@ -48,8 +47,6 @@ public class T7Ejercicio01 {
 	            double notaMedia = notasAlumnos.get(alumno);
 	            System.out.println(alumno + ": " + notaMedia);
 	        }
-		
-	
 		
 	}
 

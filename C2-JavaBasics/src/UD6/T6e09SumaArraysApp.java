@@ -3,7 +3,7 @@ package UD6;
 import java.util.Random;
 import java.util.Scanner;
 
-public class T6Ejercicio09App {
+public class T6e09SumaArraysApp {
 
 	public static void main(String[] args) {
 	

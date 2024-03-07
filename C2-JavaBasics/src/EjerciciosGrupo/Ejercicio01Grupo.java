@@ -25,6 +25,10 @@ public class Ejercicio01Grupo {
     
        
     }
+	public static void Random(HashMap<String, Integer> listaEstudiantes) {
+		
+	}
+	
 	 public static void imprimirEdad (HashMap<String, Integer> listadoAlumnos) {
          for (int edad : listadoAlumnos.values()) {
                System.out.println(edad);
@@ -35,6 +39,7 @@ public class Ejercicio01Grupo {
          for (String nombre : listadoAlumnos.keySet()) {
                System.out.println(nombre);
          }
+     
    }
 	 
 	 
