@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class T7Ejercicio02 {
+public class Ejercicio02 {
 
     public static void main(String[] args) { 
         HashMap<String, Map<String, Object>> compra = new HashMap<>();
@@ -13,10 +13,12 @@ public class T7Ejercicio02 {
         
         while(agregarMasArticulos) {
             String nombre = articulo(); 
-            double precioConIva =iva();
-            double devolucion = aPagar(precioConIva); 
+            double precio = precioArticulo();
+            double iva =iva(precio);
+            double precioFinal= precioFinal(precio,iva);
+            double devolucion = aPagar(precioFinal); 
             
-            agregarDatos(compra, nombre, precioConIva, devolucion); 
+            agregarDatos(compra, nombre, precioFinal, devolucion); 
             agregarMasArticulos = preguntarAgregarMasArticulos();
         }
         
@@ -32,27 +34,33 @@ public class T7Ejercicio02 {
     public static double precioArticulo() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce el precio del articulo");
-        return sc.nextDouble(); 
+        double precio= sc.nextDouble(); 
+        return precio;
     }
     
-    public static double iva() {
+    public static double iva(double precio) {
         Scanner sc = new Scanner(System.in); 
         System.out.println("¿Qué tipo de IVA se aplica al producto? (21% o 4%)");
         double iva = sc.nextDouble(); 
-        return precioArticulo() * (iva / 100);
+         double precioIva= precio * (iva / 100);
+         return precioIva;
     }
     
+    public static double precioFinal(double precio,double iva) {
+    	double precioF= precio +iva; 
+    	return precioF;
+    }
     
-    public static double aPagar(double precioConIva) {
+    public static double aPagar(double precioF) {
         Scanner sc = new Scanner(System.in); 
         System.out.println("Cantidad de € que te da el cliente"); 
         double q€ = sc.nextDouble(); 
-        return q€ - precioConIva;
+        return q€ - precioF;
     }
     
-    public static void agregarDatos(HashMap<String, Map<String, Object>> compra, String nombre, double precioConIva, double devolucion) {
+    public static void agregarDatos(HashMap<String, Map<String, Object>> compra, String nombre, double precioFinal, double devolucion) {
         Map<String, Object> detallesArticulo = new HashMap<>();
-        detallesArticulo.put("PrecioConIva", precioConIva);
+        detallesArticulo.put("PrecioFinal", precioFinal);
         detallesArticulo.put("Devolucion", devolucion);
         compra.put(nombre, detallesArticulo);
     }
@@ -62,11 +70,11 @@ public class T7Ejercicio02 {
         for (Map.Entry<String, Map<String, Object>> entry : compra.entrySet()) {
             String nombre = entry.getKey();
             Map<String, Object> detallesArticulo = entry.getValue();
-            double precioConIva = ((Number) detallesArticulo.get("PrecioConIva")).doubleValue();
+            double precioFinal = ((Number) detallesArticulo.get("PrecioFinal")).doubleValue();
             double devolucion = ((Number) detallesArticulo.get("Devolucion")).doubleValue();
 
             System.out.println("Nombre: " + nombre);
-            System.out.println("Precio con IVA: " + precioConIva);
+            System.out.println("Precio con IVA: " + precioFinal);
             System.out.println("Devolución: " + devolucion);
             System.out.println("----------------------------");
         }

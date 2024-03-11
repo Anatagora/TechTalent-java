@@ -3,7 +3,7 @@ package UD7;
 import java.util.Hashtable;
 import java.util.Scanner;
 
-public class T7Ejercicio01 {
+public class Ejercicio01 {
 
 	public static void main(String[] args) {
 		

@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  	a un articulo concreto e incluso listar toda la información en la terminal del programa.
  */
 
-public class Inventario03App {
+public class Ejercicio03 {
 	public static void main(String[] args) {
 		HashMap<String, Integer> inventario = new HashMap<>();
 
