@@ -32,7 +32,12 @@ public class StockArticulos {
         this.IVA = IVA;
         this.cantidad = cantidad;
     }
-
+    
+    // almacenamos en nombre el valor recogido por el JOption 
+    // StockArticulos producto = crea un nuevo objeto con los valores proporcionados. 
+    // inventario.add = agrega el nuevo objeto al inventario. 
+    // IF = verificamos que el tamaño del inventario sea =< que 10. 
+    
     public static void agregarArticulo() {
         String nombre = JOptionPane.showInputDialog
         		("Ingrese el nombre del artículo:");
@@ -56,7 +61,13 @@ public class StockArticulos {
         			"¡Artículo agregado correctamente!",
         				"Mensaje", JOptionPane.INFORMATION_MESSAGE);
     }
-
+    
+    // se pide el nombre y lo pasa a upperCase
+    // crea un objeto iterator para recorrer el inventario, accede, elimina y verifica. 
+    // while - inicia un bucle que recorre cada elemento mientras haya elementos no visitados. 
+    // StockArticulos producto, obtienee el nombre, IF compara el nombre, si hay una coincidencia
+    // lo elimina y muestra un mensaje. 
+    
     public static void eliminarArticulo() {
     	
         String nombre = JOptionPane.showInputDialog
@@ -81,6 +92,10 @@ public class StockArticulos {
         			"Error", JOptionPane.ERROR_MESSAGE);
     }
     
+    // bucle que recorre todos los elementos del inventario. - producto  
+    // if - se compara el nombre del producto actual con el nombre proporcionado 
+    // equalsIgnoreCase = comparación no sensible a mayus o minus. 
+    
     public static StockArticulos buscarArticulo(String nombre) {
         for (StockArticulos producto : inventario) {
             if (producto.nombre.equalsIgnoreCase(nombre)) {
@@ -89,7 +104,13 @@ public class StockArticulos {
         }
         return null;
     }
-
+    
+    // for each - recorre cada elemento del inventario. IF - comparada el nombre 
+    // del producto actual con el nombre proporcionado por el usuario  
+    // int nuevaCantidad = solicita la nueva cantidad - producto.cantidad= modifica 
+    // la q de producto actual x la ingresada
+    // sino --- ERROR 
+    
     public static void modificarCantidad() {
         String nombre = JOptionPane.showInputDialog
         			("Ingrese el nombre del artículo cuya cantidad desea modificar:");
@@ -110,7 +131,12 @@ public class StockArticulos {
         		"El artículo '" + nombre + "' no existe en el inventario.",
         			"Error", JOptionPane.ERROR_MESSAGE);
     }
-
+    
+    // StringBuilder stock = crea un objeto SB=stock e inicializa su contenido 
+    // en la cadena INVENTARIO ACTUAL 
+    // bucle recorre cada elemento y asigna producto - .append (añade)
+    // Joption se imprime 
+    
     public static void mostrarStock() {
         StringBuilder stock = new StringBuilder("INVENTARIO ACTUAL:\n");
         
@@ -120,7 +146,11 @@ public class StockArticulos {
         JOptionPane.showMessageDialog(null, stock.toString(),
                 "Inventario Actual", JOptionPane.INFORMATION_MESSAGE);
     }
-
+    
+    // Crea SB lista, inicializa en la cadena 
+    // bucle recorre y almacena en producto, lista.append
+    // JOptionPane, muestra un panel con la lista de productos - toString. 
+    
     public static void listarProductos() {
         StringBuilder lista = new StringBuilder("Productos disponibles:\n");
         for (StockArticulos producto : inventario) {
@@ -147,6 +177,7 @@ public class StockArticulos {
         	inventario.add(patatas);
         StockArticulos manzanas = new StockArticulos("MANZANAS", 1.75, 21, 45);
         	inventario.add(manzanas);
+        
         
         Scanner sc = new Scanner(System.in);
         boolean otroCliente = true;

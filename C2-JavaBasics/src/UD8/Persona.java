@@ -13,7 +13,7 @@ public class Persona
 	{
 	this.nombre =" ## "; 
 	this.edad= 0; 
-	this.DNI= " ## "; 
+	this.DNI= " xxxxxxxxC "; 
 	this.sexo= " hombre "; 
 	this.peso = 0.0; 
 	this.altura =0.0; 
@@ -22,7 +22,7 @@ public class Persona
 	
 	public Persona(String nombre, int edad)
 	{
-	this.nombre =" nombre "; 
+	this.nombre =nombre; 
 	this.edad= edad; 
 	this.DNI= " ## "; 
 	this.sexo= " hombre "; 
@@ -30,14 +30,79 @@ public class Persona
 	this.altura =0.0;
 	}
 	
+	
 	public Persona(String nombre, int edad, String dni, double peso, double altura)
 	{
-	this.nombre =" nombre "; 
+	this.nombre =nombre; 
 	this.edad= edad; 
-	this.DNI= " dni "; 
+	this.DNI= dni; 
 	this.sexo= " hombre "; 
 	this.peso = peso; 
 	this.altura =altura;
 	}
 	
+	public void mostrar() 
+	{
+        System.out.println("El nombre es " + this.nombre + " y tiene " + this.edad + 
+        		" años. Su dni es "+this.DNI + " su sexo es "+ this.sexo + 
+        		"su peso es "+this.peso + " y su altura es "+this.altura +".");
+    }
+	
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public String getDNI() {
+		return DNI;
+	}
+
+	public void setDNI(String dNI) {
+		DNI = dNI;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public static void main(String[] args) 
+	{
+		Persona persona1 = new Persona(); 
+		persona1.mostrar();
+		
+		Persona persona2 = new Persona("Kevin", 29);
+		persona2.mostrar();
+		
+		Persona persona3 = new Persona("Manolo", 32,"75693207c", 80,1.8);
+		persona3.mostrar();
+	}
 }

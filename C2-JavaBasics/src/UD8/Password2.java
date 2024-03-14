@@ -7,43 +7,63 @@ public class Password2
 
 	private final int DEFAULT_LENGHT = 8;
 	
-	private int lenght;
-	private String password;
+	private int longitud;
+	private String pass;
 
 	public Password2()
 	{
-		this.lenght = DEFAULT_LENGHT;
-		this.password = GeneratePassword(DEFAULT_LENGHT);
+		this.longitud = DEFAULT_LENGHT;
+		this.pass = GeneratePassword(DEFAULT_LENGHT);
 	}
 	
 	public Password2(int passwordLenght)
 	{
-		this.lenght = passwordLenght;
-		this.password = GeneratePassword(passwordLenght);
+		this.longitud = passwordLenght;
+		this.pass = GeneratePassword(passwordLenght);
 	}
 
-	public String ToString() 
+	public String toString() 
 	{
-		return this.password;
+		return this.pass;
 	}
 	
-	private String GeneratePassword(int passwordLenght) {
+	private String GeneratePassword(int passLongitud) 
+	{
 		Random randomGenerator = new Random();
 		StringBuilder password = new StringBuilder();
 		
-		for(int i=0; i<passwordLenght; i++) {
+		for(int i=0; i<passLongitud; i++) {
 			password.append(randomGenerator.nextInt(0,9));
 		}
 	
 		return password.toString();
 	}
 	
+	
+	
+	public int getLongitud() {
+		return longitud;
+	}
+
+	public void setLongitud(int longitud) {
+		this.longitud = longitud;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
 	public static void main(String[] args) 
 	{
 		Password2 passwordTest1 = new Password2(5);
+		System.out.println("Your password 1 is: " + passwordTest1.toString());
+		
 		Password2 passwordTest2 = new Password2();
-
-		System.out.println("Your password 1 is: " + passwordTest1.ToString());
-		System.out.println("Your password 2 is: " + passwordTest2.ToString());
+		System.out.println("Your password 2 is: " + passwordTest2.toString());
+		
 	}
 }
