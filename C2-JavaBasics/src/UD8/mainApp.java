@@ -30,7 +30,7 @@ public class mainApp {
 		Electrodomestico electrodomestico2 = new Electrodomestico(105, 32);
 		electrodomestico2.mostrar();
 		
-		Electrodomestico electrodomestico3 = new Electrodomestico(125, "Rojo", "A", 32);
+		Electrodomestico electrodomestico3 = new Electrodomestico(125, "Rojo", 'A', 32);
 		electrodomestico3.mostrar();
 		System.out.println("\n");
 		
