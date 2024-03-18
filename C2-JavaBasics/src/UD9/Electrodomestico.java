@@ -1,4 +1,4 @@
-package UD8;
+package UD9;
 
 public class Electrodomestico 
 {
@@ -78,5 +78,4 @@ public class Electrodomestico
 	public void setPeso(double peso) {
 		this.peso = peso;
 	}
-
 }
