@@ -89,6 +89,6 @@ public class Electrodomestico
 		
 		Electrodomestico electrodomestico3 = new Electrodomestico(125, "Rojo", "A", 32);
 		electrodomestico3.mostrar();
-		//hola 
+		 
 	}
 }
