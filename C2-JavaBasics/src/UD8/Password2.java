@@ -40,7 +40,6 @@ public class Password2
 	}
 	
 	
-	
 	public int getLongitud() {
 		return longitud;
 	}
@@ -57,13 +56,4 @@ public class Password2
 		this.pass = pass;
 	}
 
-	public static void main(String[] args) 
-	{
-		Password2 passwordTest1 = new Password2(5);
-		System.out.println("Your password 1 is: " + passwordTest1.toString());
-		
-		Password2 passwordTest2 = new Password2();
-		System.out.println("Your password 2 is: " + passwordTest2.toString());
-		
-	}
 }

@@ -94,15 +94,4 @@ public class Persona
 		return sexo;
 	}
 
-	public static void main(String[] args) 
-	{
-		Persona persona1 = new Persona(); 
-		persona1.mostrar();
-		
-		Persona persona2 = new Persona("Kevin", 29);
-		persona2.mostrar();
-		
-		Persona persona3 = new Persona("Manolo", 32,"75693207c", 80,1.8);
-		persona3.mostrar();
-	}
 }

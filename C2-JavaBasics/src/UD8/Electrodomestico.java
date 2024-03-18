@@ -79,16 +79,4 @@ public class Electrodomestico
 		this.peso = peso;
 	}
 
-	public static void main(String[] args) 
-	{
-		Electrodomestico electrodomestico1 = new Electrodomestico(); 
-		electrodomestico1.mostrar();
-		
-		Electrodomestico electrodomestico2 = new Electrodomestico(105, 32);
-		electrodomestico2.mostrar();
-		
-		Electrodomestico electrodomestico3 = new Electrodomestico(125, "Rojo", "A", 32);
-		electrodomestico3.mostrar();
-		 
-	}
 }

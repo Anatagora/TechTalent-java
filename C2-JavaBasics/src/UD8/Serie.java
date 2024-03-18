@@ -91,18 +91,4 @@ public class Serie
 		this.creador = creador;
 	}
 
-	public static void main(String[] args) 
-	{
-		Serie serie1 = new Serie (); 
-		serie1.mostrar(); 
-		
-		Serie serie2 = new Serie ("Las locas aventuras de M.Rajoy", "M.Rajoy"); 
-		serie2.mostrar();
-		
-		Serie serie3 = new Serie("Oh no! Elecciones otra vez", 2, "Comedia politica", "Pere Aragonès"); 
-		serie3.mostrar();
-		
-		Serie serie4 = new Serie("The Office", 9, "Comedia", "Ricky Gervais"); 
-		serie4.mostrar(); 
-	}
 }
