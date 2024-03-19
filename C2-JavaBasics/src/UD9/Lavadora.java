@@ -39,7 +39,7 @@ public class Lavadora extends ElectrodomesticoUD9
 		this.carga = carga;
 	}
 	
-	public double precioFinal_Lavadora() 
+	public double precioFinal() 
 	{
 		double precio =super.precioFinal(consumoEnergetico, peso); 
 		if (carga > 30) {

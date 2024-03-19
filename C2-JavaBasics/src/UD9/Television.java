@@ -32,7 +32,7 @@ public class Television extends ElectrodomesticoUD9
 			this.sintonizador = tdt;
 		}
 		
-		public double precioFinal_Television() 
+		public double precioFinal() 
 		{
 			double precio =super.precioFinal(consumoEnergetico, peso); 
 			if (pulgadas > 40) {
@@ -46,7 +46,22 @@ public class Television extends ElectrodomesticoUD9
 		}
 		
 		
-		
+		public int getPulgadas() {
+			return pulgadas;
+		}
+
+		public void setPulgadas(int pulgadas) {
+			this.pulgadas = pulgadas;
+		}
+
+		public boolean isSintonizador() {
+			return sintonizador;
+		}
+
+		public void setSintonizador(boolean sintonizador) {
+			this.sintonizador = sintonizador;
+		}
+
 		public void mostrar() 
 		{
 	        System.out.println("Lavadora tiene un precio de "+this.precioBase +

@@ -3,7 +3,12 @@ package UD9;
 public class ElectrodomesticoMainApp {
 
 	public static void main(String[] args) {
-		// Electrodomestico Clase Padre 
+		
+		ElectrodomesticoUD9 ArrayE[]= new ElectrodomesticoUD9 [10]; 
+		
+		
+		
+		// Instanciacion Electrodomestico Clase Padre 
 		
 		ElectrodomesticoUD9 electrodomestico1 = new ElectrodomesticoUD9(); 
 		electrodomestico1.mostrar();
