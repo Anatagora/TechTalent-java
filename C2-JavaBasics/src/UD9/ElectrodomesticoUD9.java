@@ -24,7 +24,7 @@ public class ElectrodomesticoUD9
 	
 	public ElectrodomesticoUD9(double precio, double peso) 
 	{
-		this.precioBase = precio; 
+		this.precioBase = precioFinal( consumoEnergetico, peso); 
 		this.color = color_default; 
 		this.consumoEnergetico = consumo_default; 
 		this.peso= peso; 
@@ -32,7 +32,7 @@ public class ElectrodomesticoUD9
 	
 	public ElectrodomesticoUD9(double precio, String color, char consumo, double peso) 
 	{
-		this.precioBase = precio; 
+		this.precioBase = precioFinal( consumo, peso); 
 		this.color = comprobarColor(color); 
 		this.consumoEnergetico = comprobarConsumoEnergetico(consumo); 
 		this.peso= peso; 
@@ -40,7 +40,7 @@ public class ElectrodomesticoUD9
 	
 	public void mostrar() 
 	{
-        System.out.println("El electrodoméstico tiene un precio base de "+this.precioBase +
+        System.out.println("El electrodoméstico tiene un precio de "+this.precioBase +
         		" su color es "+this.color +
         		" su consumo energetico es " + this.consumoEnergetico +
         		" y su peso es "+this.peso +".");
@@ -111,8 +111,45 @@ public class ElectrodomesticoUD9
         return color_default;
 	}
 	
-	public void precioBase() 
+	protected double precioFinal(char consumoEnergetico, double peso) 
 	{
+		double precio=0;
+		switch (consumoEnergetico) 
+		{
+		case 'A': 
+			precio=100; 
+			break; 
+		case 'B': 
+			precio=80;
+			break;
+		case 'C': 
+			precio=60;
+			break;
+		case 'D': 
+			precio=50;
+			break;
+		case 'E': 
+			precio=30;
+			break;
+		case 'F': 
+			precio=10;
+			break;
+		}
+		
+		double precio2 =0;
+		
+		if (peso <= 19) {
+			precio2 = precio +10; 
+		} else if (peso <= 49){
+			precio2 = precio +50;
+		}else if (peso <= 79){
+			precio2 = precio +80;
+		} else {
+			precio2 = precio +100;
+		}
+		double precioFinal= precio + precio2; 
+		
+		return precioFinal; 
 		
 	}
 }
