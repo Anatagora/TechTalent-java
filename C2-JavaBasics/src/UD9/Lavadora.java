@@ -6,7 +6,7 @@ public class Lavadora extends ElectrodomesticoUD9
 	//Atributos 
 	private final int carga_default =5; 
 	
-	int carga; 
+	private int carga; 
 	
 	//Constructores 
 	public Lavadora() 
