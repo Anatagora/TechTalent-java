@@ -34,11 +34,14 @@ public class Television extends ElectrodomesticoUD9
 		
 		public double precioFinal_Television() 
 		{
-			double precio =super.precioFinal((char)pulgadas, sintonizador); 
+			double precio =super.precioFinal(consumoEnergetico, peso); 
 			if (pulgadas > 40) {
-				precio= precio +50;
+				precio= (precio *0.3)+precio;
 			}
-			
+			if (sintonizador == true) {
+				precio= 50+precio;
+			}
+		
 			return precio; 
 		}
 		

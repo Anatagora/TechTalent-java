@@ -139,13 +139,13 @@ public class ElectrodomesticoUD9
 		double precio2 =0;
 		
 		if (peso <= 19) {
-			precio2 = precio +10; 
+			precio2 = 10; 
 		} else if (peso <= 49){
-			precio2 = precio +50;
+			precio2 = 50;
 		}else if (peso <= 79){
-			precio2 = precio +80;
+			precio2 = 80;
 		} else {
-			precio2 = precio +100;
+			precio2 = 100;
 		}
 		double precioFinal= precio + precio2; 
 		
