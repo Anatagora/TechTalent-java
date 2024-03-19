@@ -9,10 +9,10 @@ public class Electrodomestico
 	protected final double peso_default = 5; 
 	
 	
-	private double precioBase; 
-	private String color; 
-	private char consumoEnergetico; 
-	private double peso; 
+	protected double precioBase; 
+	protected String color; 
+	protected char consumoEnergetico; 
+	protected double peso; 
 	
 	public Electrodomestico() 
 	{
@@ -79,4 +79,35 @@ public class Electrodomestico
 		this.peso = peso;
 	}
 
+	protected char comprobarConsumoEnergetico(char letra) 
+	{
+        char[] letrasValidas = {'A','F'};
+        boolean letraValida = false;
+
+        for (char letraValidaAux : letrasValidas) {
+            if (letra == letraValidaAux) {
+                letraValida = true;
+                break;
+            }
+        }
+
+        if (!letraValida) {
+            letra = consumo_default;
+        }
+
+        return letra;
+    }
+	
+	protected String comprobarColor (String color) 
+	{
+		String[] colores = {"Blanco", "Rojo","Negro", "Azul", "Gris"};
+        
+        for (String color_Aux : colores) {
+            if (color.equals(color_Aux)) { 
+                return color;
+            }
+        }
+
+        return color_default;
+	}
 }

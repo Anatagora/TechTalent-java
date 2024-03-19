@@ -24,7 +24,7 @@ public class Persona
 	{
 	this.nombre =nombre; 
 	this.edad= edad; 
-	this.DNI= " ## "; 
+	this.DNI= " xxxxxxxxC "; 
 	this.sexo= " hombre "; 
 	this.peso = 0.0; 
 	this.altura =0.0;

@@ -1,6 +1,6 @@
 package UD9;
 
-public class Electrodomestico 
+public class ElectrodomesticoUD9 
 {
 
 	protected final double precio_default = 100.0; 
@@ -9,12 +9,12 @@ public class Electrodomestico
 	protected final double peso_default = 5; 
 	
 	
-	private double precioBase; 
-	private String color; 
-	private char consumoEnergetico; 
-	private double peso; 
+	protected double precioBase; 
+	protected String color; 
+	protected char consumoEnergetico; 
+	protected double peso; 
 	
-	public Electrodomestico() 
+	public ElectrodomesticoUD9() 
 	{
 		this.precioBase = precio_default; 
 		this.color = color_default; 
@@ -22,7 +22,7 @@ public class Electrodomestico
 		this.peso= peso_default; 
 	}
 	
-	public Electrodomestico(double precio, double peso) 
+	public ElectrodomesticoUD9(double precio, double peso) 
 	{
 		this.precioBase = precio; 
 		this.color = color_default; 
@@ -30,11 +30,11 @@ public class Electrodomestico
 		this.peso= peso; 
 	}
 	
-	public Electrodomestico(double precio, String color, char consumo, double peso) 
+	public ElectrodomesticoUD9(double precio, String color, char consumo, double peso) 
 	{
 		this.precioBase = precio; 
-		this.color = color; 
-		this.consumoEnergetico = consumo; 
+		this.color = comprobarColor(color); 
+		this.consumoEnergetico = comprobarConsumoEnergetico(consumo); 
 		this.peso= peso; 
 	}
 	
@@ -68,7 +68,7 @@ public class Electrodomestico
 	}
 
 	public void setConsumoEnergetico(char consumoEnergetico) {
-		this.consumoEnergetico = consumoEnergetico;
+		this.consumoEnergetico = comprobarConsumoEnergetico(consumoEnergetico);
 	}
 
 	public double getPeso() {
@@ -77,5 +77,42 @@ public class Electrodomestico
 
 	public void setPeso(double peso) {
 		this.peso = peso;
+	}
+	
+	protected char comprobarConsumoEnergetico(char letra) 
+	{
+        char[] letrasValidas = {'A', 'B', 'C', 'D', 'E', 'F'};
+        boolean letraValida = false;
+
+        for (char letraValidaAux : letrasValidas) {
+            if (letra == letraValidaAux) {
+                letraValida = true;
+                break;
+            }
+        }
+
+        if (!letraValida) {
+            letra = consumo_default;
+        }
+
+        return letra;
+    }
+	
+	protected String comprobarColor (String color) 
+	{
+		String[] colores = {"Blanco", "Rojo","Negro", "Azul", "Gris"};
+        
+        for (String color_Aux : colores) {
+            if (color.equals(color_Aux)) { 
+                return color;
+            }
+        }
+
+        return color_default;
+	}
+	
+	public void precioBase() 
+	{
+		
 	}
 }
