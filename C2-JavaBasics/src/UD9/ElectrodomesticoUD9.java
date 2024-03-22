@@ -1,6 +1,6 @@
 package UD9;
 
-public abstract class ElectrodomesticoUD9 
+public class ElectrodomesticoUD9 
 {
 
 	protected final double precio_default = 100.0; 
