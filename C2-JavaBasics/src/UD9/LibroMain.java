@@ -14,7 +14,7 @@ public class LibroMain
 	
 	  Libro libroConMasPaginas = Libro.compararPaginas(libro1, libro2);
       if (libroConMasPaginas != null) {
-          System.out.println("\nEl libro con más páginas es: " + libroConMasPaginas.getTitulo());
+          System.out.println("\nEl libro con más páginas es: " + libroConMasPaginas.getTitulo() +".");
       } else {
           System.out.println("Ambos libros tienen el mismo número de páginas.");
       }
