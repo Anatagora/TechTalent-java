@@ -1,4 +1,4 @@
-package UD9;
+package UD9.ejercicio1;
 
 public class Television extends ElectrodomesticoUD9 
 {

@@ -1,4 +1,4 @@
-package UD9;
+package UD9.Ejercicio2;
 
 public interface Entregable {
 

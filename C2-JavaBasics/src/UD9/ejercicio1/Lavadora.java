@@ -1,4 +1,4 @@
-package UD9;
+package UD9.ejercicio1;
 
 public class Lavadora extends ElectrodomesticoUD9 
 {
