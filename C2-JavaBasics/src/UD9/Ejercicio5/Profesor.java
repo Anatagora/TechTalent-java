@@ -25,12 +25,12 @@ public class Profesor extends Persona
 	}
 	
 	//Métodos 
-	public String getMaterias() 
+	public String getMateria() 
 	{
 		return materia;
 	}
 
-	public void setMaterias(String materias) 
+	public void setMateria(String materias) 
 	{
 		this.materia = materias;
 	}

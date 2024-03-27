@@ -43,4 +43,15 @@ public class Estudiantes extends Persona
 		Random random= new Random(); 
 		return random.nextDouble()>0.5; 
 	}
+	
+	public int getCalificacion_actual() 
+	{
+		return calificacion_actual;
+	}
+	
+	public void setCalificacion_actual(int calificacion_actual) 
+	{
+		this.calificacion_actual = calificacion_actual;
+	}
+	
 }
