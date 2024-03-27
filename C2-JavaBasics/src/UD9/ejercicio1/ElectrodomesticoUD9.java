@@ -40,7 +40,7 @@ public class ElectrodomesticoUD9
 	
 	public void mostrar() 
 	{
-        System.out.println("El electrodoméstico tiene un precio de "+this.precioBase +
+        System.out.println("El electrodoméstico tiene un precio de "+this.precioFinal(consumoEnergetico, peso) +
         		" su color es "+this.color +
         		" su consumo energetico es " + this.consumoEnergetico +
         		" y su peso es "+this.peso +".");
@@ -113,43 +113,42 @@ public class ElectrodomesticoUD9
 	
 	protected double precioFinal(char consumoEnergetico, double peso) 
 	{
-		double precio=0;
+		double precio=precioBase;
 		switch (consumoEnergetico) 
 		{
 		case 'A': 
-			precio=100; 
+			precio+=100; 
 			break; 
 		case 'B': 
-			precio=80;
+			precio+=80;
 			break;
 		case 'C': 
-			precio=60;
+			precio+=60;
 			break;
 		case 'D': 
-			precio=50;
+			precio+=50;
 			break;
 		case 'E': 
-			precio=30;
+			precio+=30;
 			break;
 		case 'F': 
-			precio=10;
+			precio+=10;
 			break;
 		}
 		
-		double precio2 =0;
 		
 		if (peso <= 19) {
-			precio2 = 10; 
+			precio += 10; 
 		} else if (peso <= 49){
-			precio2 = 50;
+			precio += 50;
 		}else if (peso <= 79){
-			precio2 = 80;
+			precio += 80;
 		} else {
-			precio2 = 100;
+			precio += 100;
 		}
-		double precioFinal= precio + precio2; 
-		
-		return precioFinal; 
+//		double precioFinal= precio + precio2+precioBase; 
+//		System.out.println(precio);
+		return precio; 
 		
 	}
 }

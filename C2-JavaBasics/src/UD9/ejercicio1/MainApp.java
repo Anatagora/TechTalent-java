@@ -1,6 +1,7 @@
 package UD9.ejercicio1;
 
-public class ElectrodomesticoMainApp {
+public class MainApp 
+{
 
 	public static void main(String[] args) 
 	{
@@ -8,7 +9,7 @@ public class ElectrodomesticoMainApp {
 		ElectrodomesticoUD9 ArrayE[]= new ElectrodomesticoUD9 [10]; 
 		 //Clase padre - Electrodomestico
 		
-		ElectrodomesticoUD9 Electrodomestico1 = new ElectrodomesticoUD9 (200, "Amarillo", 'A', 25); 
+		ElectrodomesticoUD9 Electrodomestico1 = new ElectrodomesticoUD9 (300, "Amarillo", 'A', 25); 
 		ElectrodomesticoUD9 Electrodomestico2 = new ElectrodomesticoUD9 (200, "Rojo", 'B', 32);
 		ElectrodomesticoUD9 Electrodomestico3 = new ElectrodomesticoUD9 (200, "Amarillo", 'D', 40);
 		ElectrodomesticoUD9 Electrodomestico4 = new ElectrodomesticoUD9 (200, "Amarillo", 'F', 58);

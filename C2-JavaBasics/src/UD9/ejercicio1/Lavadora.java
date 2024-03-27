@@ -5,7 +5,6 @@ public class Lavadora extends ElectrodomesticoUD9
 
 	//Atributos 
 	private final int carga_default =5; 
-	
 	private int carga; 
 	
 	//Constructores 
@@ -51,7 +50,7 @@ public class Lavadora extends ElectrodomesticoUD9
 	
 	public void mostrar() 
 	{
-        System.out.println("Lavadora tiene un precio de "+this.precioBase +
+        System.out.println("Lavadora tiene un precio de "+this.precioFinal() +
         		" su color es "+this.color +
         		" su consumo energetico es " + this.consumoEnergetico +
         		" su peso es "+this.peso + " y su carga es " +this.carga +".");

@@ -64,7 +64,7 @@ public class Television extends ElectrodomesticoUD9
 
 		public void mostrar() 
 		{
-	        System.out.println("Lavadora tiene un precio de "+this.precioBase +
+	        System.out.println("Televisión tiene un precio de "+this.precioFinal() +
 	        		" su color es "+this.color +
 	        		" su consumo energetico es " + this.consumoEnergetico +
 	        		" su peso es "+this.peso + " y tiene " +this.pulgadas +" pulgadas "+".");
