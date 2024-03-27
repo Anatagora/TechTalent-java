@@ -3,7 +3,7 @@ package UD9.Ejercicio2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SerieVideojuegoMainApp 
+public class MainApp 
 {
 	public static void main(String[] args) 
 	{
