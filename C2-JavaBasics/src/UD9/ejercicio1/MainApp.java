@@ -61,7 +61,8 @@ public class MainApp
 			} else if (electrodomestico instanceof Lavadora) {
 				totalLavadoras += ((Lavadora)electrodomestico).precioFinal();
 			}else {
-				totalElectrodomesticos += electrodomestico.precioFinal(electrodomestico.getConsumoEnergetico(), electrodomestico.getPeso());
+				totalElectrodomesticos += electrodomestico
+						.precioFinal(electrodomestico.getConsumoEnergetico(), electrodomestico.getPeso());
 			}
 		}
 
