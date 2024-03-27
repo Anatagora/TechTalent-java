@@ -8,7 +8,7 @@ public class Estudiantes extends Persona
 {
 	//Atributos
 	protected List<Integer>calificaciones = (List<Integer>) Arrays.asList(0,1,2,3,4,5,6,7,8,9,10);
-	protected int calificacion_actual; 
+	protected double calificacion_actual; 
 	
 	//Constructores
 	public Estudiantes() 
@@ -16,13 +16,13 @@ public class Estudiantes extends Persona
 		super(); 
 		this.calificacion_actual=0; 
 	}
-	public Estudiantes(int nota) 
+	public Estudiantes(double nota) 
 	{
 		super(); 
 		this.calificacion_actual=nota; 
 	}
 	
-	public Estudiantes(String nombre, int edad,char sexo, int nota) 
+	public Estudiantes(String nombre, int edad,char sexo, double nota) 
 	{
 		super(nombre,edad,sexo); 
 		this.calificacion_actual=nota; 
@@ -44,12 +44,12 @@ public class Estudiantes extends Persona
 		return random.nextDouble()>0.5; 
 	}
 	
-	public int getCalificacion_actual() 
+	public double getCalificacion_actual() 
 	{
 		return calificacion_actual;
 	}
 	
-	public void setCalificacion_actual(int calificacion_actual) 
+	public void setCalificacion_actual(double calificacion_actual) 
 	{
 		this.calificacion_actual = calificacion_actual;
 	}
