@@ -46,12 +46,19 @@ public class Aula
 	
 	public void añadirEstudiantes(Estudiantes estudiante) 
 	{
-		if(nEstudiantes<max_Capacidad) {
-			estudiantes[nEstudiantes++]=estudiante; 
-		}else {
-			System.out.println("Aula llena");
-		}
+	    if (nEstudiantes <= max_Capacidad) {
+	        estudiantes[nEstudiantes] = estudiante; 
+	        nEstudiantes++;
+	    } else {
+	        System.out.println("Aula llena");
+	    }
 	}
+	
+	public void añadirProfesor(Profesor profe) 
+	{
+		this.profesor=profe;
+	}
+	
 	
 	//Contar estudiantes aprobados 
 	public void estudiantesAprobados() 
