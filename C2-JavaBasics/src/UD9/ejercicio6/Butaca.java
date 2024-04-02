@@ -8,7 +8,7 @@ public class Butaca
 	private boolean ocupado;
 
 	public Butaca() {
-		this.fila = 1;
+		this.fila = 0;
 		this.columna = 'A';
 		this.ocupado = false;
 	}
@@ -45,6 +45,6 @@ public class Butaca
 
 	@Override
 	public String toString() {
-		return "Asiento [fila=" + fila + ", columna=" + columna + ", ocupado=" + ocupado + "]";
+		return "La butaca " + fila + columna + "¿Esta ocupada?" + ocupado + ".";
 	}
 }

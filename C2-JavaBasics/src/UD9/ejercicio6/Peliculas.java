@@ -1,6 +1,6 @@
 package UD9.ejercicio6;
 
-public class Pelicula 
+public class Peliculas 
 {
 
 	private String titulo;
@@ -8,14 +8,14 @@ public class Pelicula
 	private int edadMinima;
 	private String director;
 
-	public Pelicula() {
-		this.titulo = "título";
-		this.duracion = 60;
-		this.edadMinima = 18;
-		this.director = "director";
+	public Peliculas() {
+		this.titulo = "none";
+		this.duracion = 0;
+		this.edadMinima = 0;
+		this.director = "none";
 	}
 
-	public Pelicula(String titulo, int duracion, int edadMinima, String director) {
+	public Peliculas(String titulo, int duracion, int edadMinima, String director) {
 		this.titulo = titulo;
 		this.duracion = duracion;
 		this.edadMinima = edadMinima;
@@ -56,7 +56,8 @@ public class Pelicula
 
 	@Override
 	public String toString() {
-		return "Pelicula [titulo=" + titulo + ", duracion=" + duracion + ", edadMinima=" + edadMinima + ", director=" + director
-				+ "]";
+		return "La pelicula " + titulo + "tiene una duracion de" + duracion + " minutos,  "
+	+ " la edad minima para visualizarla es " + edadMinima + "y su director es " + director
+				+ ".";
 	}
 }
