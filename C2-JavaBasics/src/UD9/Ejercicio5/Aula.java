@@ -78,6 +78,6 @@ public class Aula
 		}
 		System.out.println("----- ESTUDIANTES APROBADOS ------");
 		System.out.println("Alumnos hombres aprobados: " +alumnos_Aprobados);
-		System.out.println("Alumnas mujeres aprobadas: " +alumnas_Aprobadas);
+		System.out.println("Alumnas mujeres aprobadas: " +alumnas_Aprobadas +"\n");
 	}
 }

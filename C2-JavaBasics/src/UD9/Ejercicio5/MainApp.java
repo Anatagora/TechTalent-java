@@ -36,10 +36,10 @@ public class MainApp
 
 		if (aula1.profesorDisponible()) 
 		{
-			System.out.println("Aula 1: Profesor disponible para dar clase");
+			System.out.println("Aula 1: Profesor disponible para dar clase.");
 			aula1.estudiantesAprobados();
 		}else {
-			System.out.println("Aula 1: No se puede dar clase");
+			System.out.println("Aula 1: Profesor no disponible.");
 		}
 		
 		//Creación nueva aula 2 
@@ -55,10 +55,10 @@ public class MainApp
 		
 		if (aula2.profesorDisponible()) 
 		{
-			System.out.println("Aula2: Profesor disponible para dar clase");
+			System.out.println("Aula2: Profesor disponible para dar clase.");
 			aula2.estudiantesAprobados();
 		}else {
-			System.out.println("Aula 2: No se puede dar clase");
+			System.out.println("Aula 2: Profesor no disponible.");
 		}
 
 		//Creación nueva aula3
@@ -74,10 +74,10 @@ public class MainApp
 		
 		if (aula3.profesorDisponible()) 
 		{
-			System.out.println("Aula 3: Profesor disponible para dar clase");
+			System.out.println("Aula 3: Profesor disponible para dar clase.");
 			aula3.estudiantesAprobados();
 		}else {
-			System.out.println("Aula 3: No se puede dar clase");
+			System.out.println("Aula 3: Profesor no disponible.");
 		}
 	}
 
