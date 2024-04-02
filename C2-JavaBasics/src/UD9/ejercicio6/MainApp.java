@@ -2,9 +2,11 @@ package UD9.ejercicio6;
 
 import java.util.Scanner;
 
-public class MainApp {
+public class MainApp 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		Scanner sc = new Scanner(System.in);
 
 		Pelicula p = new Pelicula("Titánic", 120, 12, "Director");
@@ -14,7 +16,7 @@ public class MainApp {
 		Butaca[][] asientos = new Butaca[c.getFilas()][c.getColumnas()];
 
 		rellenarAsientos(asientos);
-		dibujarCine(asientos);
+		imprimirCine(asientos);
 
 		System.out.println("Introduce el número de espectadores que van al cine:");
 		int n = sc.nextInt();
@@ -22,14 +24,14 @@ public class MainApp {
 		
 		generarEspectadores(n, espectadores);
 		sentarEspectadores(espectadores, capacidad, c, asientos, p);
-		dibujarCine(asientos);
+		imprimirCine(asientos);
 		
 		sc.close();
 	}
 
-	public static void sentarEspectadores(Espectador[] espectadores, int capacidad, Cine c, Butaca[][] asientos, Pelicula p) {
+	public static void sentarEspectadores(Espectador[] espectadores, int capacidad, Cine c, Butaca[][] asientos, Pelicula p) 
+	{
 		int count = 0;
-		//Mientras queden espectadores por asignarle un asiento
 		while (count < espectadores.length && hayEspacio(asientos)) {
 			int fila = generarAsiento(c.getFilas());
 			int columna = generarAsiento(c.getColumnas());
@@ -50,14 +52,15 @@ public class MainApp {
 		return (int) (Math.random() * n);
 	}
 
-	public static void generarEspectadores(int n, Espectador[] espectadores) {
+	public static void generarEspectadores(int n, Espectador[] espectadores) 
+	{
 		for (int i = 0; i < n; i++) {
 			espectadores[i] = new Espectador();
-			//System.out.println(espectadores[i].toString());
 		}
 	}
 
-	public static void dibujarCine(Butaca[][] asientos) {
+	public static void imprimirCine(Butaca[][] asientos) 
+	{
 		for (int i = asientos.length - 1; i >= 0; i--) {
 			for (int j = 0; j < asientos[i].length; j++) {
 				Butaca asientoActual = asientos[i][j];
@@ -73,7 +76,8 @@ public class MainApp {
 		System.out.println();
 	}
 
-	public static void rellenarAsientos(Butaca[][] asientos) {
+	public static void rellenarAsientos(Butaca[][] asientos) 
+	{
 		for (int i = 0; i < asientos.length; i++) {
 			for (int j = 0; j < asientos[i].length; j++) {
 				asientos[i][j] = new Butaca();
@@ -83,15 +87,18 @@ public class MainApp {
 		}
 	}
 
-	public static boolean puedeSentarse(Espectador e, Cine c, Pelicula p, Butaca[][] a) {
+	public static boolean puedeSentarse(Espectador e, Cine c, Pelicula p, Butaca[][] a) 
+	{
 		return ((tieneDinero(e, c)) && (tieneEdad(p, e)));
 	}
 
-	public static boolean tieneDinero(Espectador e, Cine c) {
+	public static boolean tieneDinero(Espectador e, Cine c) 
+	{
 		return (e.getDinero() >= c.getPrecio());
 	}
 
-	public static boolean hayEspacio(Butaca[][] asientos) {
+	public static boolean hayEspacio(Butaca[][] asientos) 
+	{
 		for (int i = 0; i < asientos.length; i++) {
 			for (int j = 0; j < asientos[i].length; j++) {
 				if (!asientos[i][j].isOcupado()) {
@@ -102,7 +109,8 @@ public class MainApp {
 		return false;
 	}
 
-	public static boolean tieneEdad(Pelicula p, Espectador e) {
+	public static boolean tieneEdad(Pelicula p, Espectador e) 
+	{
 		return (e.getEdad() >= p.getEdadMinima());
 	}
 
