@@ -1,6 +1,6 @@
 package UD9.Ejercicio5;
 
-public class Persona 
+public abstract class Persona 
 {
 	//Atributos
 	protected String nombre; 
