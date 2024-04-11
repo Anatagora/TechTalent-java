@@ -10,7 +10,7 @@ public class MainApp
 		Scanner sc = new Scanner(System.in);
 
 		Peliculas pelicula1 = new Peliculas("Dune", 166, 13, "Director");
-		Cine cine1 = new Cine(pelicula1, 20, 8, 9);
+		Cine cine1 = new Cine(pelicula1, 8, 8, 9);
 
 		int capacidad = cine1.getColumnas() * cine1.getFilas();
 		Butaca[][] asientos = new Butaca[cine1.getFilas()][cine1.getColumnas()];
