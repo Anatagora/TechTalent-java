@@ -17,10 +17,10 @@ UNIQUE (nombre_curso),
 cod_curso INT, 
 PRIMARY KEY (cod_curso), 
 max_alumnos INT, 
-fecha_inicio DATE DEFAULT, 
+fecha_inicio DATE DEFAULT CURRENT_DATE, 
 fecha_fin DATE, 
-CONSTRAIN fecha_curso CHECK(fecha_inicio < fecha_fin),
-num_horas INT NOT NULL
+CONSTRAINT fecha_curso CHECK(fecha_inicio < fecha_fin),
+num_horas INT NOT NULL,
 dni_profesor VARCHAR(8), 
 FOREIGN KEY (dni_profesor)
     REFERENCES profesores (dni_profesor)
