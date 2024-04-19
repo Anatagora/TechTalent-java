@@ -1,16 +1,19 @@
 INSERT INTO despachos (capacidad) VALUES
 (3),(8),(7),(6),(4),(1),(2),(9),(5),(12);
 
+INSERT INTO despachos (num_despacho, capacidad) VALUES
+(1, 12), (2,10), (3,5), (4,16), (5,9), (6,6), (7,12);
+
 --Inicial prueba 
 
 INSERT INTO directores (dni, nom_apels, dni_jefe, num_despacho) VALUES
-('12345', 'Socorro Ruiz, Aurora', NULL, '2'), 
-('22345', 'Sanchez, Pedro', NULL, '3'), 
-('32345', 'Rajoy, Mariano', NULL, '2'), 
-('42345', 'Swift, Taylor', NULL, '2'), 
-('62345', 'Chalamet, Timothée', NULL, '2'), 
-('52345', 'Shelby, Tommy', NULL, '2'), 
-('72345', 'White, Walter', NULL, '2'), 
-('82345', 'Monkey D, Luffy', NULL, '2'), 
-('92345', 'Roronoa, Zoro', NULL, '2'), 
-('13345', 'Lee,Bruce ', NULL, '2'), 
+('12345', 'Socorro Ruiz, Aurora', NULL, '1'), 
+('22345', 'Sanchez, Pedro', NULL, '2'), 
+('32345', 'Rajoy, Mariano', NULL, '3'), 
+('42345', 'Swift, Taylor', NULL, '4'), 
+('62345', 'Chalamet, Timothée', NULL, '5'), 
+('52345', 'Shelby, Tommy', NULL, '6'), 
+('72345', 'White, Walter', NULL, '7'), 
+('82345', 'Monkey D, Luffy', NULL, '3'), 
+('92345', 'Roronoa, Zoro', NULL, '9'), 
+('13345', 'Lee,Bruce ', NULL, '10');
