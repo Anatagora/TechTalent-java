@@ -1,9 +1,6 @@
 INSERT INTO despachos (capacidad) VALUES
 (3),(8),(7),(6),(4),(1),(2),(9),(5),(12);
 
-INSERT INTO despachos (num_despacho, capacidad) VALUES
-(1, 12), (2,10), (3,5), (4,16), (5,9), (6,6), (7,12);
-
 --Inicial prueba 
 
 INSERT INTO directores (dni, nom_apels, dni_jefe, num_despacho) VALUES
