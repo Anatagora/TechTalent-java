@@ -32,3 +32,9 @@ WHERE id_producto = '001';
 -- 7. Eliminar un cliente por correo electrónico
 DELETE FROM clientes
 WHERE e_mail = 'roberto.fernandez@example.com';
+
+8 -- Obtener todos los productos y la cantidad disponible en inventario (si está disponible)
+SELECT pr.nombre AS Producto, i.cantidad AS Cantidad_Disponible
+FROM productos pr
+LEFT JOIN inventario i ON pr.id_producto = i.id_producto;
+
