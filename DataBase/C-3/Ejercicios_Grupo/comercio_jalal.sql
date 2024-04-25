@@ -26,4 +26,4 @@ CREATE TABLE clientes (
     nombre VARCHAR(80), 
     apellidos VARCHAR (80),
     e_mail VARCHAR(150),
-);
+); 
