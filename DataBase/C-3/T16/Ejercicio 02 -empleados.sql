@@ -84,7 +84,7 @@ HAVING COUNT(*) > 2;
 INSERT INTO departamentos (cod_departamento, nombre, presupuesto) VALUES (11, 'Nueva_Calidad', 40000);
 
 -- Añadir un empleado vinculado al departamento recién creado: Esther Vázquez, DNI 89267109
-INSERT INTO empleados (dni, nombre, apellidos, cod_departamento) VALUES ('89267109', 'Esther', 'Vázquez', 11);
+INSERT INTO empleados (dni, nombre, apellidos, cod_departamento) VALUES ('89267109', 'Esther', 'Vázquez', 9);
 
 -- Aplicar un recorte presupuestario del 10% a todos los departamentos
 UPDATE departamentos SET presupuesto = presupuesto * 0.9;
