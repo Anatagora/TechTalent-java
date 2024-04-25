@@ -24,14 +24,36 @@ SELECT nombre, precio, IVA
 FROM productos
 WHERE IVA = 0.21;
 
--- 6. Actualizar el precio de un producto específico
+-- UPDATE 
+
+-- 1. Actualizar el precio de todos los productos con IVA del 21% a un nuevo valor
+UPDATE productos
+SET precio = precio * 1.10
+WHERE IVA = 0.21;
+
+-- 2. Actualizar el precio de un producto específico
 UPDATE productos
 SET precio = 1050.00
 WHERE id_producto = '001';
 
--- 7. Eliminar un cliente por correo electrónico
+-- 3. Actualizar el correo electrónico del cliente con id_cliente igual a 1
+UPDATE clientes
+SET e_mail = 'nuevo.correo@example.com'
+WHERE id_cliente = 1;
+ 
+ -- ELIMINICACIÓN 
+
+-- 1. Eliminar un producto específico por su id_producto
+DELETE FROM productos
+WHERE id_producto = '005';
+
+-- 2. Eliminar un cliente por correo electrónico
 DELETE FROM clientes
 WHERE e_mail = 'roberto.fernandez@example.com';
+
+-- 3. Eliminar un cliente por su id_cliente
+DELETE FROM clientes
+WHERE id_cliente = 2;
 
 8 -- Obtener todos los productos y la cantidad disponible en inventario (si está disponible)
 SELECT pr.nombre AS Producto, i.cantidad AS Cantidad_Disponible
