@@ -31,7 +31,7 @@ CREATE TABLE inventario(
     FOREIGN KEY (id_producto)
     REFERENCES productos (id_producto)
     ON DELETE CASCADE
-    ON UPDATE CASCADE,
+    ON UPDATE CASCADE
 );
 
 CREATE TABLE caja(
@@ -55,8 +55,7 @@ CREATE TABLE ticket(
     REFERENCES caja (num_caja)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
-    precio_total FLOAT, 
-    
+    precio_total FLOAT
 );
 
 CREATE TABLE clientes (
@@ -69,5 +68,6 @@ CREATE TABLE clientes (
     FOREIGN KEY (id_ticket)
     REFERENCES ticket (id_ticket)
     ON DELETE CASCADE
-    ON UPDATE CASCADE,
-); 
+    ON UPDATE CASCADE
+);  
+
