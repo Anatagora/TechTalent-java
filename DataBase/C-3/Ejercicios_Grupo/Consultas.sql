@@ -1,4 +1,6 @@
---CONSULTAS 
+--CONSULTAS
+
+--SELECT 
 -- 1. Obtener todos los proveedores y sus productos
 SELECT p.nombre AS Proveedor, pr.nombre AS Producto
 FROM proveedores p
@@ -24,6 +26,11 @@ SELECT nombre, precio, IVA
 FROM productos
 WHERE IVA = 0.21;
 
+6 -- Obtener todos los productos y la cantidad disponible en inventario (si está disponible)
+SELECT pr.nombre AS Producto, i.cantidad AS Cantidad_Disponible
+FROM productos pr
+LEFT JOIN inventario i ON pr.id_producto = i.id_producto;
+
 -- UPDATE 
 
 -- 1. Actualizar el precio de todos los productos con IVA del 21% a un nuevo valor
@@ -41,6 +48,8 @@ UPDATE clientes
 SET e_mail = 'nuevo.correo@example.com'
 WHERE id_cliente = 1;
  
+
+
  -- ELIMINICACIÓN 
 
 -- 1. Eliminar un producto específico por su id_producto
@@ -55,8 +64,5 @@ WHERE e_mail = 'roberto.fernandez@example.com';
 DELETE FROM clientes
 WHERE id_cliente = 2;
 
-8 -- Obtener todos los productos y la cantidad disponible en inventario (si está disponible)
-SELECT pr.nombre AS Producto, i.cantidad AS Cantidad_Disponible
-FROM productos pr
-LEFT JOIN inventario i ON pr.id_producto = i.id_producto;
+
 
