@@ -25,13 +25,13 @@ INSERT INTO cajas (num_referencia, contenido, valor, cod_almacen) VALUES
 ('C010', 'Zapatos', 95, 20);
 
 --CONSULTAS 
--- 1) Obtener todos los almacenes
+-- 3. 1) Obtener todos los almacenes
 SELECT * FROM almacenes;
 
--- 2) Obtener todas las cajas cuyo contenido tenga un valor superior a 150
+-- 3.2) Obtener todas las cajas cuyo contenido tenga un valor superior a 150
 SELECT * FROM cajas WHERE valor > 150;
 
--- 3) Obtener los tipos de contenidos de las cajas
+-- 3.3) Obtener los tipos de contenidos de las cajas
 SELECT DISTINCT contenido FROM cajas;
 
 -- 4) Obtener el valor medio de todas las cajas
