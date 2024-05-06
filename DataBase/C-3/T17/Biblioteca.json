@@ -1,24 +1,48 @@
 [
     {
-        "titulo": "Orgullo y prejuicio", 
-        "fecha_lanzamiento:" "28/01/1813", 
-        "Autor:" "Jane Austen", 
-        "Categoria:" "Romance", 
-        "Editorial:" "Planeta", 
-        "idioma:" "Inglés", 
-        "Páginas:" 608, 
-        "Descripción": "Orgullo y Prejuicio es una novela clásica escrita por Jane Austen que sigue la historia de Elizabeth Bennet y su relación con el orgulloso pero encantador Sr. Darcy. Ambientada en la Inglaterra del siglo XIX, la novela aborda temas de amor, matrimonio, clase social y la importancia del autoconocimiento y la superación de los prejuicios sociales." ,
-        "Portada:" ""
-}, 
-{
-    "titulo": "Orgullo y prejuicio", 
-    "fecha_lanzamiento:" "28/01/1813", 
-    "Autor:" "Jane Austen", 
-    "Categoria:" "Romance", 
-    "Editorial:" "Planeta", 
-    "idioma:" "Inglés", 
-    "Páginas:" 608, 
-    "Descripción": "Orgullo y Prejuicio es una novela clásica escrita por Jane Austen que sigue la historia de Elizabeth Bennet y su relación con el orgulloso pero encantador Sr. Darcy. Ambientada en la Inglaterra del siglo XIX, la novela aborda temas de amor, matrimonio, clase social y la importancia del autoconocimiento y la superación de los prejuicios sociales." ,
-    "Portada:" ""
-}, 
-]
+      "titulo": "Cumbres Borrascosas",
+      "fecha_lanzamiento": "1847",
+      "Autor": "Emily Brontë",
+      "Categoria": "Romance gótico",
+      "Editorial": "Penguin Books",
+      "idioma": "Inglés",
+      "Páginas": 416,
+      "Descripción": "Cumbres Borrascosas es una novela gótica escrita por Emily Brontë. La historia se centra en la relación tormentosa entre Catherine Earnshaw y el misterioso Heathcliff en los páramos de Yorkshire. Ambientada en el siglo XIX, la novela aborda temas de pasión, venganza y el oscuro lado del amor.",
+      "Portada": "https://www.penguinlibros.com/co/2235955/cumbres-borrascosas.jpg"
+    },
+    {
+      "titulo": "Anna Karenina",
+      "fecha_lanzamiento": "1878",
+      "Autor": "León Tolstói",
+      "Categoria": "Clásico",
+      "Editorial": "Vintage Classics",
+      "idioma": "Ruso",
+      "Páginas": 864,
+      "Descripción": "Anna Karenina es una novela escrita por León Tolstói que sigue la vida de la aristócrata Anna Karenina y su tumultuosa relación extramatrimonial con el apuesto oficial Alexei Vronsky. Situada en la Rusia imperial, la novela aborda temas como el amor prohibido, la moralidad y las convenciones sociales.",
+      "Portada": "https://www.penguinlibros.com/es/1994003-medium_default/anna-karenina-edicion-conmemorativa.jpg"
+    },
+    {
+      "titulo": "Mujercitas",
+      "fecha_lanzamiento": "1868",
+      "Autor": "Louisa May Alcott",
+      "Categoria": "Ficción juvenil",
+      "Editorial": "Puffin Classics",
+      "idioma": "Inglés",
+      "Páginas": 448,
+      "Descripción": "Mujercitas es una novela semiautobiográfica escrita por Louisa May Alcott que sigue las vidas de las cuatro hermanas March: Meg, Jo, Beth y Amy, durante la Guerra Civil estadounidense. La novela explora temas de familia, amistad, amor y la búsqueda de la identidad personal.",
+      "Portada": "https://m.media-amazon.com/images/I/71aOOkGQTZL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "titulo": "Orgullo y prejuicio",
+      "fecha_lanzamiento": "28/01/1813",
+      "Autor": "Jane Austen",
+      "Categoria": "Romance",
+      "Editorial": "Planeta",
+      "idioma": "Inglés",
+      "Páginas": 608,
+      "Descripción": "Orgullo y Prejuicio es una novela clásica escrita por Jane Austen que sigue la historia de Elizabeth Bennet y su relación con el orgulloso pero encantador Sr. Darcy. Ambientada en la Inglaterra del siglo XIX, la novela aborda temas de amor, matrimonio, clase social y la importancia del autoconocimiento y la superación de los prejuicios sociales.",
+      "Portada": "https://www.planetadelibros.com/usuaris/libros/fotos/62/original/portada_orgullo-y-prejuicio_jane-austen_201506271719.jpg"  
+    }
+    
+  ]
+  
