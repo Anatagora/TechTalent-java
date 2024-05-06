@@ -1,0 +1,33 @@
+use directores_05
+
+db.createCollection("directores") 
+db.directores.insertMany(
+[
+    { "dni": "12345", "nom_apels": "Socorro Ruiz, Aurora", "dni_jefe": "22345", "num_despacho": "1" },
+    { "dni": "22345", "nom_apels": "Sanchez, Pedro", "dni_jefe": "32345", "num_despacho": "2" },
+    { "dni": "32345", "nom_apels": "Rajoy, Mariano", "dni_jefe": "42345", "num_despacho": "3" },
+    { "dni": "42345", "nom_apels": "Swift, Taylor", "dni_jefe": "62345", "num_despacho": "4" },
+    { "dni": "62345", "nom_apels": "Chalamet, Timothée", "dni_jefe": "52345", "num_despacho": "5" },
+    { "dni": "52345", "nom_apels": "Shelby, Tommy", "dni_jefe": "72345", "num_despacho": "6" },
+    { "dni": "72345", "nom_apels": "White, Walter", "dni_jefe": "82345", "num_despacho": "7" },
+    { "dni": "82345", "nom_apels": "Monkey D, Luffy", "dni_jefe": "32345", "num_despacho": "3" },
+    { "dni": "92345", "nom_apels": "Roronoa, Zoro", "dni_jefe": "42345", "num_despacho": "9" },
+    { "dni": "13345", "nom_apels": "Lee,Bruce ", "dni_jefe": "72345", "num_despacho": "10" }
+  ]
+);
+
+db.createCollection("despachos") 
+db.despachos.insertMany(
+[
+    { "cod_despacho": 1, "capacidad": 3 },
+    { "cod_despacho": 2, "capacidad": 8 },
+    { "cod_despacho": 3, "capacidad": 7 },
+    { "cod_despacho": 4, "capacidad": 6 },
+    { "cod_despacho": 5, "capacidad": 4 },
+    { "cod_despacho": 6, "capacidad": 1 },
+    { "cod_despacho": 7, "capacidad": 2 },
+    { "cod_despacho": 8, "capacidad": 9 },
+    { "cod_despacho": 9, "capacidad": 5 },
+    { "cod_despacho": 10, "capacidad": 12 }
+  ] 
+);

@@ -1,32 +1,32 @@
 // Crear base de datos tiendainfo
-use tiendainfo;
+use Ejercicio01_Tienda_info
 
 // Crear colección fabricantes e insertar documentos
-db.createCollection("fabricantes");
+db.createCollection("fabricantes")
 db.fabricantes.insertMany([
-    { nombre: "Fabricante A" },
-    { nombre: "Fabricante B" },
-    { nombre: "Fabricante C" },
-    { nombre: "Fabricante D" },
-    { nombre: "Fabricante E" },
-    { nombre: "Fabricante F" },
-    { nombre: "Fabricante G" },
-    { nombre: "Fabricante H" },
-    { nombre: "Fabricante I" },
-    { nombre: "Fabricante J" }
+    { nombre: "Sony" },
+    { nombre: "Samsung" },
+    { nombre: "Apple" },
+    { nombre: "LG Electronics" },
+    { nombre: "Huawei" },
+    { nombre: "Dell" },
+    { nombre: "Lenovo" },
+    { nombre: "HP" },
+    { nombre: "Microsoft" },
+    { nombre: "Acer" }
 ]);
 
 // Crear colección articulos e insertar documentos
-db.createCollection("articulos");
+db.createCollection("articulos")
 db.articulos.insertMany([
-    { nombre: "Artículo 1", precio: 10.50, fabricante: 1 },
-    { nombre: "Artículo 2", precio: 20.25, fabricante: 2 },
-    { nombre: "Artículo 3", precio: 15.75, fabricante: 3 },
-    { nombre: "Artículo 4", precio: 30.00, fabricante: 4 },
-    { nombre: "Artículo 5", precio: 25.50, fabricante: 5 },
-    { nombre: "Artículo 6", precio: 18.75, fabricante: 6 },
-    { nombre: "Artículo 7", precio: 22.00, fabricante: 7 },
-    { nombre: "Artículo 8", precio: 35.25, fabricante: 8 },
-    { nombre: "Artículo 9", precio: 28.50, fabricante: 9 },
-    { nombre: "Artículo 10", precio: 40.00, fabricante: 10 }
+    { nombre: "PlayStation 5", precio: 499.99, fabricante: "Sony" },
+    { nombre: "Samsung Galaxy S21", precio: 899.99, fabricante: "Samsung" },
+    { nombre: "iPhone 13 Pro", precio: 999.99, fabricante: "Apple" },
+    { nombre: "LG OLED65CXPUA", precio: 2499.99, fabricante: "LG Electronics" },
+    { nombre: "Huawei MateBook X Pro", precio: 1399.99, fabricante: "Huawei" },
+    { nombre: "Dell XPS 15", precio: 1599.99, fabricante: "Dell" },
+    { nombre: "Lenovo ThinkPad X1 Carbon", precio: 1799.99, fabricante: "Lenovo" },
+    { nombre: "HP Spectre x360", precio: 1299.99, fabricante: "HP" },
+    { nombre: "Microsoft Surface Laptop 4", precio: 1299.99, fabricante: "Microsoft" },
+    { nombre: "Acer Predator Helios 300", precio: 1199.99, fabricante: "Acer" }
 ]);

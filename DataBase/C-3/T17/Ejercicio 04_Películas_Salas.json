@@ -1,0 +1,33 @@
+use peliculas_y_salas 
+
+db.createCollection("salas") 
+db.salas.insertMany(
+[
+    { "cod_sala": 1, "nombre": "Sala 1", "cod_pelicula": 101 },
+    { "cod_sala": 2, "nombre": "Sala 2", "cod_pelicula": 102 },
+    { "cod_sala": 3, "nombre": "Sala 3", "cod_pelicula": 103 },
+    { "cod_sala": 4, "nombre": "Sala 4", "cod_pelicula": 104 },
+    { "cod_sala": 5, "nombre": "Sala 5", "cod_pelicula": 105 },
+    { "cod_sala": 6, "nombre": "Sala 6", "cod_pelicula": 106 },
+    { "cod_sala": 7, "nombre": "Sala 7", "cod_pelicula": 107 },
+    { "cod_sala": 8, "nombre": "Sala 8", "cod_pelicula": 108 },
+    { "cod_sala": 9, "nombre": "Sala 9", "cod_pelicula": 109 },
+    { "cod_sala": 10, "nombre": "Sala 10", "cod_pelicula": 110 }
+  ]
+);
+
+db.createCollection("peliculas") 
+db.peliculas.insertMany(
+[
+    { "cod_pelicula": 101, "nombre": "Titanic", "calificacion_edad": 12 },
+    { "cod_pelicula": 102, "nombre": "El Padrino", "calificacion_edad": 18 },
+    { "cod_pelicula": 103, "nombre": "Pulp Fiction", "calificacion_edad": 18 },
+    { "cod_pelicula": 104, "nombre": "La La Land", "calificacion_edad": 7 },
+    { "cod_pelicula": 105, "nombre": "Inception", "calificacion_edad": 12 },
+    { "cod_pelicula": 106, "nombre": "The Shawshank Redemption", "calificacion_edad": 16 },
+    { "cod_pelicula": 107, "nombre": "Forrest Gump", "calificacion_edad": 7 },
+    { "cod_pelicula": 108, "nombre": "Matrix", "calificacion_edad": 16 },
+    { "cod_pelicula": 109, "nombre": "Fight Club", "calificacion_edad": 18 },
+    { "cod_pelicula": 110, "nombre": "Interstellar", "calificacion_edad": 13 }
+  ]
+);

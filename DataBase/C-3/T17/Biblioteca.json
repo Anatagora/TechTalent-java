@@ -1,4 +1,6 @@
-[
+use Biblioteca
+db.createCollection("libros")
+db.libros.insertMany([
     {
       "titulo": "Cumbres Borrascosas",
       "fecha_lanzamiento": "1847",
@@ -43,6 +45,5 @@
       "Descripción": "Orgullo y Prejuicio es una novela clásica escrita por Jane Austen que sigue la historia de Elizabeth Bennet y su relación con el orgulloso pero encantador Sr. Darcy. Ambientada en la Inglaterra del siglo XIX, la novela aborda temas de amor, matrimonio, clase social y la importancia del autoconocimiento y la superación de los prejuicios sociales.",
       "Portada": "https://www.planetadelibros.com/usuaris/libros/fotos/62/original/portada_orgullo-y-prejuicio_jane-austen_201506271719.jpg"  
     }
-    
-  ]
+  ])
   
