@@ -1,0 +1,49 @@
+use cientificos_09
+
+db.createCollection("cientificos") 
+db.cientificos.insertMany(
+[
+    { "dni_cientifico": "12345678", "nom_apels": "García, Juan" },
+    { "dni_cientifico": "23456789", "nom_apels": "Martínez, María" },
+    { "dni_cientifico": "34567890", "nom_apels": "López, José" },
+    { "dni_cientifico": "45678901", "nom_apels": "Pérez, Ana" },
+    { "dni_cientifico": "56789012", "nom_apels": "Rodríguez, Carlos" },
+    { "dni_cientifico": "67890123", "nom_apels": "Sánchez, Laura" },
+    { "dni_cientifico": "78901234", "nom_apels": "González, Pedro" },
+    { "dni_cientifico": "89012345", "nom_apels": "Ramírez, Isabel" },
+    { "dni_cientifico": "90123456", "nom_apels": "Torres, Sergio" },
+    { "dni_cientifico": "01234567", "nom_apels": "Díaz, Carmen" }
+  ]
+);
+
+db.createCollection("asignado_a") 
+db.asignado_a.insertMany(
+[
+    { "dni_cientifico": "12345678", "id_proyecto": "P004" },
+    { "dni_cientifico": "23456789", "id_proyecto": "P004" },
+    { "dni_cientifico": "34567890", "id_proyecto": "P005" },
+    { "dni_cientifico": "45678901", "id_proyecto": "P005" },
+    { "dni_cientifico": "56789012", "id_proyecto": "P006" },
+    { "dni_cientifico": "67890123", "id_proyecto": "P006" },
+    { "dni_cientifico": "78901234", "id_proyecto": "P007" },
+    { "dni_cientifico": "89012345", "id_proyecto": "P007" },
+    { "dni_cientifico": "90123456", "id_proyecto": "P008" },
+    { "dni_cientifico": "01234567", "id_proyecto": "P008" }
+  ]
+);
+
+db.createCollection("proyecto") 
+db.proyecto.insertMany(
+[
+    { "id_proyecto": "P004", "nombre": "Proyecto D", "horas": 45 },
+    { "id_proyecto": "P005", "nombre": "Proyecto E", "horas": 55 },
+    { "id_proyecto": "P006", "nombre": "Proyecto F", "horas": 35 },
+    { "id_proyecto": "P007", "nombre": "Proyecto G", "horas": 60 },
+    { "id_proyecto": "P008", "nombre": "Proyecto H", "horas": 40 },
+    { "id_proyecto": "P009", "nombre": "Proyecto I", "horas": 50 },
+    { "id_proyecto": "P010", "nombre": "Proyecto J", "horas": 30 },
+    { "id_proyecto": "P011", "nombre": "Proyecto K", "horas": 70 },
+    { "id_proyecto": "P012", "nombre": "Proyecto L", "horas": 25 },
+    { "id_proyecto": "P013", "nombre": "Proyecto M", "horas": 65 }
+  ]
+);

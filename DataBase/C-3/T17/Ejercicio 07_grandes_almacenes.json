@@ -1,0 +1,65 @@
+use grandes_almacenes_07
+
+db.createCollection("cajeros") 
+db.cajeros.insertMany(
+[
+    { "cod_cajero": 1, "nom_apels": "Juan Pérez" },
+    { "cod_cajero": 2, "nom_apels": "María López" },
+    { "cod_cajero": 3, "nom_apels": "Carlos Rodríguez" },
+    { "cod_cajero": 4, "nom_apels": "Ana García" },
+    { "cod_cajero": 5, "nom_apels": "Pedro Martínez" },
+    { "cod_cajero": 6, "nom_apels": "Laura Sánchez" },
+    { "cod_cajero": 7, "nom_apels": "José González" },
+    { "cod_cajero": 8, "nom_apels": "Isabel Ramírez" },
+    { "cod_cajero": 9, "nom_apels": "Sergio Torres" },
+    { "cod_cajero": 10, "nom_apels": "Carmen Díaz" }
+  ]
+); 
+
+db.createCollection("productos") 
+db.productos.insertMany(
+[
+    { "cod_producto": 501, "nombre": "Producto A", "precio": 100 },
+    { "cod_producto": 502, "nombre": "Producto B", "precio": 150 },
+    { "cod_producto": 503, "nombre": "Producto C", "precio": 200 },
+    { "cod_producto": 504, "nombre": "Producto D", "precio": 120 },
+    { "cod_producto": 505, "nombre": "Producto E", "precio": 180 },
+    { "cod_producto": 506, "nombre": "Producto F", "precio": 90 },
+    { "cod_producto": 507, "nombre": "Producto G", "precio": 210 },
+    { "cod_producto": 508, "nombre": "Producto H", "precio": 160 },
+    { "cod_producto": 509, "nombre": "Producto I", "precio": 220 },
+    { "cod_producto": 510, "nombre": "Producto J", "precio": 130 }
+  ]
+); 
+
+db.createCollection("venta") 
+db.venta.insertMany(
+[
+    { "cod_cajero": 1, "cod_maquina": 101, "cod_producto": 501 },
+    { "cod_cajero": 2, "cod_maquina": 102, "cod_producto": 502 },
+    { "cod_cajero": 3, "cod_maquina": 103, "cod_producto": 503 },
+    { "cod_cajero": 4, "cod_maquina": 104, "cod_producto": 504 },
+    { "cod_cajero": 5, "cod_maquina": 105, "cod_producto": 505 },
+    { "cod_cajero": 6, "cod_maquina": 106, "cod_producto": 506 },
+    { "cod_cajero": 7, "cod_maquina": 107, "cod_producto": 507 },
+    { "cod_cajero": 8, "cod_maquina": 108, "cod_producto": 508 },
+    { "cod_cajero": 9, "cod_maquina": 109, "cod_producto": 509 },
+    { "cod_cajero": 10, "cod_maquina": 110, "cod_producto": 510 }
+  ] 
+); 
+
+db.createCollection("maquinas_registradoras") 
+db.maquinas_registradoras.insertMany(
+[
+    { "cod_maquina": 101, "piso": 1 },
+    { "cod_maquina": 102, "piso": 2 },
+    { "cod_maquina": 103, "piso": 1 },
+    { "cod_maquina": 104, "piso": 3 },
+    { "cod_maquina": 105, "piso": 2 },
+    { "cod_maquina": 106, "piso": 1 },
+    { "cod_maquina": 107, "piso": 3 },
+    { "cod_maquina": 108, "piso": 2 },
+    { "cod_maquina": 109, "piso": 1 },
+    { "cod_maquina": 110, "piso": 3 }
+  ]
+); 

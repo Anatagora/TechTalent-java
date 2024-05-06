@@ -1,0 +1,65 @@
+use investigadores_08
+
+db.createCollection("facultad") 
+db.facultad.insertMany(
+[
+    { "cod_facultad": 1, "nombre": "Facultad de Ciencias" },
+    { "cod_facultad": 2, "nombre": "Facultad de Ingeniería" },
+    { "cod_facultad": 3, "nombre": "Facultad de Medicina" },
+    { "cod_facultad": 4, "nombre": "Facultad de Derecho" },
+    { "cod_facultad": 5, "nombre": "Facultad de Artes" },
+    { "cod_facultad": 6, "nombre": "Facultad de Economía" },
+    { "cod_facultad": 7, "nombre": "Facultad de Humanidades" },
+    { "cod_facultad": 8, "nombre": "Facultad de Educación" },
+    { "cod_facultad": 9, "nombre": "Facultad de Arquitectura" },
+    { "cod_facultad": 10, "nombre": "Facultad de Química" }
+  ]
+);
+
+db.createCollection("investigadores") 
+db.investigadores.insertMany(
+[
+    { "dni_investigador": "12345678", "nom_apels": "Juan Pérez", "cod_facultad": 1 },
+    { "dni_investigador": "23456789", "nom_apels": "María López", "cod_facultad": 2 },
+    { "dni_investigador": "34567890", "nom_apels": "Carlos Rodríguez", "cod_facultad": 3 },
+    { "dni_investigador": "45678901", "nom_apels": "Ana García", "cod_facultad": 4 },
+    { "dni_investigador": "56789012", "nom_apels": "Pedro Martínez", "cod_facultad": 5 },
+    { "dni_investigador": "67890123", "nom_apels": "Laura Sánchez", "cod_facultad": 6 },
+    { "dni_investigador": "78901234", "nom_apels": "José González", "cod_facultad": 7 },
+    { "dni_investigador": "89012345", "nom_apels": "Isabel Ramírez", "cod_facultad": 8 },
+    { "dni_investigador": "90123456", "nom_apels": "Sergio Torres", "cod_facultad": 9 },
+    { "dni_investigador": "01234567", "nom_apels": "Carmen Díaz", "cod_facultad": 10 }
+  ]  
+);
+
+db.createCollection("reserva") 
+db.reserva.insertMany(
+[
+    { "dni_investigador": "12345678", "num_serie": "E001", "comienzo": "2024-05-01", "fin": "2024-05-15" },
+    { "dni_investigador": "23456789", "num_serie": "E002", "comienzo": "2024-05-02", "fin": "2024-05-16" },
+    { "dni_investigador": "34567890", "num_serie": "E003", "comienzo": "2024-05-03", "fin": "2024-05-17" },
+    { "dni_investigador": "45678901", "num_serie": "E004", "comienzo": "2024-05-04", "fin": "2024-05-18" },
+    { "dni_investigador": "56789012", "num_serie": "E005", "comienzo": "2024-05-05", "fin": "2024-05-19" },
+    { "dni_investigador": "67890123", "num_serie": "E006", "comienzo": "2024-05-06", "fin": "2024-05-20" },
+    { "dni_investigador": "78901234", "num_serie": "E007", "comienzo": "2024-05-07", "fin": "2024-05-21" },
+    { "dni_investigador": "89012345", "num_serie": "E008", "comienzo": "2024-05-08", "fin": "2024-05-22" },
+    { "dni_investigador": "90123456", "num_serie": "E009", "comienzo": "2024-05-09", "fin": "2024-05-23" },
+    { "dni_investigador": "01234567", "num_serie": "E010", "comienzo": "2024-05-10", "fin": "2024-05-24" }
+  ]
+);
+
+db.createCollection("equipos") 
+db.equipos.insertMany(
+[
+    { "num_serie": "E001", "nombre": "Equipo A", "cod_facultad": 1 },
+    { "num_serie": "E002", "nombre": "Equipo B", "cod_facultad": 2 },
+    { "num_serie": "E003", "nombre": "Equipo C", "cod_facultad": 3 },
+    { "num_serie": "E004", "nombre": "Equipo D", "cod_facultad": 4 },
+    { "num_serie": "E005", "nombre": "Equipo E", "cod_facultad": 5 },
+    { "num_serie": "E006", "nombre": "Equipo F", "cod_facultad": 6 },
+    { "num_serie": "E007", "nombre": "Equipo G", "cod_facultad": 7 },
+    { "num_serie": "E008", "nombre": "Equipo H", "cod_facultad": 8 },
+    { "num_serie": "E009", "nombre": "Equipo I", "cod_facultad": 9 },
+    { "num_serie": "E010", "nombre": "Equipo J", "cod_facultad": 10 }
+  ]
+);

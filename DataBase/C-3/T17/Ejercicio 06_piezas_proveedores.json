@@ -1,0 +1,49 @@
+use piezas_proveedores_06
+
+db.createCollection("piezas") 
+db.piezas.insertMany(
+[
+    { "cod_pieza": 1, "nombre": "tornillo" },
+    { "cod_pieza": 2, "nombre": "muelle" },
+    { "cod_pieza": 3, "nombre": "destornillador" },
+    { "cod_pieza": 4, "nombre": "tuerca" },
+    { "cod_pieza": 5, "nombre": "arandela" },
+    { "cod_pieza": 6, "nombre": "perno" },
+    { "cod_pieza": 7, "nombre": "remache" },
+    { "cod_pieza": 8, "nombre": "resorte" },
+    { "cod_pieza": 9, "nombre": "abrazadera" },
+    { "cod_pieza": 10, "nombre": "brida" }
+  ]
+); 
+
+db.createCollection("suministra") 
+db.suministra.insertMany(
+[
+    { "id_proveedor": "1111", "nombre": "Paco" },
+    { "id_proveedor": "1112", "nombre": "Jysk" },
+    { "id_proveedor": "1113", "nombre": "Leroy_Merlin" },
+    { "id_proveedor": "1114", "nombre": "Bauhaus" },
+    { "id_proveedor": "1115", "nombre": "Muebles_Ardilla" },
+    { "id_proveedor": "1116", "nombre": "Bricomat" },
+    { "id_proveedor": "1117", "nombre": "Ikea" },
+    { "id_proveedor": "1118", "nombre": "Mercadona" },
+    { "id_proveedor": "1119", "nombre": "Aldi" },
+    { "id_proveedor": "1121", "nombre": "Carrefour" }
+  ]
+); 
+
+db.createCollection("proveedores") 
+db.proveedores.insertMany(
+[
+    { "cod_pieza": 1, "id_proveedor": "1111", "precio": 2 },
+    { "cod_pieza": 2, "id_proveedor": "1112", "precio": 5 },
+    { "cod_pieza": 3, "id_proveedor": "1113", "precio": 1 },
+    { "cod_pieza": 4, "id_proveedor": "1114", "precio": 4 },
+    { "cod_pieza": 5, "id_proveedor": "1115", "precio": 9 },
+    { "cod_pieza": 6, "id_proveedor": "1116", "precio": 3 },
+    { "cod_pieza": 7, "id_proveedor": "1117", "precio": 8 },
+    { "cod_pieza": 8, "id_proveedor": "1118", "precio": 2 },
+    { "cod_pieza": 9, "id_proveedor": "1119", "precio": 15 },
+    { "cod_pieza": 10, "id_proveedor": "1121", "precio": 2 }
+  ]
+); 
