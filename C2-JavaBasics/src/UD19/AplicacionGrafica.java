@@ -20,14 +20,17 @@ private JPanel contentPane = new JPanel();
 		JLabel etiqueta= new JLabel("Nombre");
 		etiqueta.setBounds(43,20,100,20);
 		contentPane.add(etiqueta);
+		
 		//Componente Campo de texto
 		JTextField campo = new JTextField();
 		campo.setBounds(43,67,86,26);
 		contentPane.add(campo);
+		
 		//Componente Botón
 		JButton boton = new JButton("Enviar");
 		boton.setBounds(43,120,100,23);
 		contentPane.add(boton);
+		
 		//Componente "Botón radio" se debe "agrupar" selección ÚNICA
 		JRadioButton rdbtnOpcion1 = new JRadioButton("Opción 1 radio", true);
 		rdbtnOpcion1.setBounds(43, 194, 109, 23);
