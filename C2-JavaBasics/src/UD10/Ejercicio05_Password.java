@@ -104,7 +104,7 @@ class Ejercicio05_Password {
             for (int i = 0; i < tamañoArray; i++) {
                 passwords[i] = new Ejercicio05_Password(longitud);
             }
-
+r
             // Array de booleanos para almacenar si es fuerte o no
             boolean[] esFuerteArray = new boolean[tamañoArray];
 
