@@ -71,12 +71,12 @@ public class Ejercicio06_Piezas_y_proveedores
         Statement stmt = conexion.createStatement();
 
         // Consulta de inserción para varios registros en la tabla suministra
-        String insertSuministraQuery = "INSERT INTO suministra (precio) VALUES " +
-                "(100), " +
-                "(150), " +
-                "(200), " +
-                "(250), " +
-                "(300)";
+        String insertSuministraQuery = "INSERT INTO suministra (precio, cod_pieza, id_proveedor) VALUES " +
+                "(10, '11','1122' ), " +
+                "(15, '12', '1123'), " +
+                "(20, '13', '1124'), " +
+                "(25, '14', '1125'), " +
+                "(30, '15','1126')";
 
         stmt.executeUpdate(insertSuministraQuery);
 
