@@ -1,7 +1,7 @@
 INSERT INTO despachos (capacidad) VALUES
 (3),(8),(7),(6),(4),(1),(2),(9),(5),(12);
 
---Inicial prueba 
+
 
 INSERT INTO directores (dni, nom_apels, dni_jefe, num_despacho) VALUES
 ('12345', 'Socorro Ruiz, Aurora', NULL, '1'), 
