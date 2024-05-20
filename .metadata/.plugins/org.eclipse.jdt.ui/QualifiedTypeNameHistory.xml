@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
 </qualifiedTypeNameHistroy>
