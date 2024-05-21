@@ -1,4 +1,4 @@
-package UD18_JDBC_conexion;
+package UD18;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

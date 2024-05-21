@@ -22,6 +22,7 @@ public class Ejercicio02_Main
         panel.add(label, BorderLayout.CENTER);
         
         // Crear el panel para los botones
+        //FlowLayout para alinearlos horizontalmente
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout());
 

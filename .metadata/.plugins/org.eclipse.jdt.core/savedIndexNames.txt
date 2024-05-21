@@ -1,6 +1,5 @@
 INDEX VERSION 1.134+C:\Users\Aurora\Documents\Repositorios\TechTalent-java\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
-3019143988.index
 3426690287.index
 4236645949.index
 138822774.index
