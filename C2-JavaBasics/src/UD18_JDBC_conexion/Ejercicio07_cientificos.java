@@ -28,11 +28,11 @@ public class Ejercicio07_cientificos {
         Statement stmt = conexion.createStatement();
 
         String insertCientificosQuery = "INSERT INTO cientificos (dni_cientifico, nom_apels) VALUES " +
-                "('12345678', 'John Doe'), " +
-                "('23456789', 'Jane Smith'), " +
-                "('34567890', 'Alice Johnson'), " +
-                "('45678901', 'Bob Brown'), " +
-                "('56789012', 'Eva Martinez')";
+                "('13335678', 'John Doe'), " +
+                "('22256789', 'Jane Smith'), " +
+                "('44567890', 'Alice Johnson'), " +
+                "('55678901', 'Bob Brown'), " +
+                "('66789012', 'Eva Martinez')";
 
         stmt.executeUpdate(insertCientificosQuery);
 
@@ -62,11 +62,11 @@ public class Ejercicio07_cientificos {
         Statement stmt = conexion.createStatement();
 
         String insertAsignadoAQuery = "INSERT INTO asignado_a (dni_cientifico, id_proyecto) VALUES " +
-                "('12345678', 'P014'), " +
-                "('23456789', 'P015'), " +
-                "('34567890', 'P016'), " +
-                "('45678901', 'P017'), " +
-                "('56789012', 'P018')";
+                "('13335678', 'P014'), " +
+                "('22256789', 'P015'), " +
+                "('44567890', 'P016'), " +
+                "('55678901', 'P017'), " +
+                "('66789012', 'P018')";
 
         stmt.executeUpdate(insertAsignadoAQuery);
 
