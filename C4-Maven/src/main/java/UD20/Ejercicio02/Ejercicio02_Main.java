@@ -7,7 +7,8 @@ import java.awt.event.ActionListener;
 
 public class Ejercicio02_Main 
 {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
         // Crear el frame principal
         JFrame frame = new JFrame("Ventana con interacción");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,16 +32,20 @@ public class Ejercicio02_Main
         JButton button2 = new JButton("Botón 2");
 
         // Añadir acción a los botones
-        button1.addActionListener(new ActionListener() {
+        button1.addActionListener(new ActionListener() 
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) 
+            {
                 label.setText("El último botón pulsado es Botón 1");
             }
         });
 
-        button2.addActionListener(new ActionListener() {
+        button2.addActionListener(new ActionListener() 
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) 
+            {
                 label.setText("El último botón pulsado es Botón 2");
             }
         });

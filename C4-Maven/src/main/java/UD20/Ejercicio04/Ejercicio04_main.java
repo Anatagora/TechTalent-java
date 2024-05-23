@@ -4,13 +4,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Ejercicio04_main extends JFrame implements MouseListener, ComponentListener {
+public class Ejercicio04_main extends JFrame implements MouseListener, ComponentListener 
+{
 
     private JLabel etiqueta;
     private JTextArea areaTexto;
     private JButton botonFinalizar;
 
-    public Ejercicio04_main() {
+    public Ejercicio04_main() 
+    {
         super("Ventana de eventos");
 
         etiqueta = new JLabel("Eventos de ventana:");
@@ -55,7 +57,8 @@ public class Ejercicio04_main extends JFrame implements MouseListener, Component
         addComponentListener(this);
 
         // Acción del botón Finalizar
-        botonFinalizar.addActionListener(new ActionListener() {
+        botonFinalizar.addActionListener(new ActionListener() 
+        {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("¡Cerrando la ventana!");
@@ -68,51 +71,61 @@ public class Ejercicio04_main extends JFrame implements MouseListener, Component
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {
+    public void mouseClicked(MouseEvent e) 
+    {
         areaTexto.append("Click del mouse en (" + e.getX() + ", " + e.getY() + ")\n");
     }
 
     @Override
-    public void mousePressed(MouseEvent e) {
+    public void mousePressed(MouseEvent e) 
+    {
         areaTexto.append("Botón del mouse presionado en (" + e.getX() + ", " + e.getY() + ")\n");
     }
 
     @Override
-    public void mouseReleased(MouseEvent e) {
+    public void mouseReleased(MouseEvent e) 
+    {
         areaTexto.append("Botón del mouse liberado en (" + e.getX() + ", " + e.getY() + ")\n");
     }
 
     @Override
-    public void mouseEntered(MouseEvent e) {
+    public void mouseEntered(MouseEvent e) 
+    {
         areaTexto.append("Mouse entró en la ventana\n");
     }
 
     @Override
-    public void mouseExited(MouseEvent e) {
+    public void mouseExited(MouseEvent e) 
+    {
         areaTexto.append("Mouse salió de la ventana\n");
     }
 
     @Override
-    public void componentResized(ComponentEvent e) {
+    public void componentResized(ComponentEvent e) 
+    {
         areaTexto.append("Ventana redimensionada a: (" + getWidth() + ", " + getHeight() + ")\n");
     }
 
     @Override
-    public void componentMoved(ComponentEvent e) {
+    public void componentMoved(ComponentEvent e) 
+    {
         areaTexto.append("Ventana movida a: (" + getX() + ", " + getY() + ")\n");
     }
 
     @Override
-    public void componentShown(ComponentEvent e) {
+    public void componentShown(ComponentEvent e) 
+    {
         // Este evento no se utiliza en este ejemplo
     }
 
     @Override
-    public void componentHidden(ComponentEvent e) {
+    public void componentHidden(ComponentEvent e) 
+    {
         // Este evento no se utiliza en este ejemplo
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         new Ejercicio04_main();
     }
 }

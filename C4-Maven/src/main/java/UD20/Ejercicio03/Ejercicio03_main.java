@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Ejercicio03_main {
+public class Ejercicio03_main 
+{
 
     private JFrame ventana;
     private JLabel etiquetaContador1;
@@ -12,13 +13,15 @@ public class Ejercicio03_main {
     private JButton botonIncrementar1, botonIncrementar2, botonReiniciar1, botonReiniciar2;
     private int valorContador1, valorContador2;
 
-    public Ejercicio03_main() {
+    public Ejercicio03_main() 
+    {
         inicializarComponentes();
         configurarVentana();
         agregarListeners();
     }
 
-    private void inicializarComponentes() {
+    private void inicializarComponentes() 
+    {
         valorContador1 = 0;
         valorContador2 = 0;
 
@@ -31,7 +34,8 @@ public class Ejercicio03_main {
         botonReiniciar2 = new JButton("Reiniciar");
     }
 
-    private void configurarVentana() {
+    private void configurarVentana() 
+    {
         ventana = new JFrame("Contador de Clics");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.getContentPane().setLayout(new GridBagLayout()); // Se utiliza GridBagLayout para mayor flexibilidad
@@ -70,45 +74,56 @@ public class Ejercicio03_main {
         ventana.setVisible(true);
     }
 
-    private void agregarListeners() {
-        botonIncrementar1.addActionListener(new ActionListener() {
+    private void agregarListeners() 
+    {
+        botonIncrementar1.addActionListener(new ActionListener() 
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) 
+            {
                 valorContador1++;
                 actualizarEtiqueta(etiquetaContador1, valorContador1);
             }
         });
 
-        botonIncrementar2.addActionListener(new ActionListener() {
+        botonIncrementar2.addActionListener(new ActionListener() 
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) 
+            {
                 valorContador2++;
                 actualizarEtiqueta(etiquetaContador2, valorContador2);
             }
         });
 
-        botonReiniciar1.addActionListener(new ActionListener() {
+        botonReiniciar1.addActionListener(new ActionListener() 
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) 
+            {
                 valorContador1 = 0;
                 actualizarEtiqueta(etiquetaContador1, valorContador1);
             }
         });
 
-        botonReiniciar2.addActionListener(new ActionListener() {
+        botonReiniciar2.addActionListener(new ActionListener() 
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) 
+            {
                 valorContador2 = 0;
                 actualizarEtiqueta(etiquetaContador2, valorContador2);
             }
         });
     }
 
-    private void actualizarEtiqueta(JLabel etiqueta, int valor) {
+    private void actualizarEtiqueta(JLabel etiqueta, int valor) 
+    {
         etiqueta.setText("Contador " + (etiqueta == etiquetaContador1 ? 1 : 2) + ": " + valor);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         new Ejercicio03_main();
     }
 }
