@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -26,6 +25,7 @@ public class MemoryGame {
     private static int firstCardIndex = -1;
     private static int secondCardIndex = -1;
     private static int moveCount = 0;
+    private static int pairsFound = 0; // Contador de pares encontrados
     private static JLabel moveCounterLabel;
 
     public static void main(String[] args) {
@@ -182,8 +182,10 @@ public class MemoryGame {
                 // Verificar si las cartas coinciden
                 if (cardImages.get(firstCardIndex).getDescription().equals(cardImages.get(secondCardIndex).getDescription())) {
                     // Cartas coinciden, se dejan descubiertas
+                    pairsFound++;
                     firstCardIndex = -1;
                     secondCardIndex = -1;
+                    checkGameWon();
                 } else {
                     // Cartas no coinciden, se voltean después de un breve retraso
                     Timer timer = new Timer(1000, new ActionListener() {
@@ -200,6 +202,12 @@ public class MemoryGame {
                 }
             }
         }
+
+        private void checkGameWon() {
+            if (pairsFound == NUM_CARDS / 2) {
+                JOptionPane.showMessageDialog(null, "¡¡FELICIDADES, HAS GANADO!!");
+            }
+        }
     }
 
     private static void restartGame() {
@@ -207,6 +215,7 @@ public class MemoryGame {
         firstCardIndex = -1;
         secondCardIndex = -1;
         moveCount = 0;
+        pairsFound = 0; // Reiniciar el contador de pares encontrados
         moveCounterLabel.setText("Movimientos: 0");
 
         // Barajar las cartas nuevamente
