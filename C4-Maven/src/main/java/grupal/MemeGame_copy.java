@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MemoGame_copy {
+public class MemeGame_copy {
     private static final int ROWS = 4;
     private static final int COLS = 4;
     private static final int NUM_CARDS = ROWS * COLS;
