@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -20,12 +19,14 @@ public class MemoGame_copy {
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";
     private static final String SQL_QUERY = "SELECT name, image FROM parejas ORDER BY RAND() LIMIT ?";
+    private static final String WIN_GIF_URL = "https://tenor.com/es/view/mapache-pedro-gif-7206648027763736533";
     private static ImageIcon backImage;
     private static ArrayList<ImageIcon> cardImages;
     private static JButton[] cardButtons;
     private static int firstCardIndex = -1;
     private static int secondCardIndex = -1;
     private static int moveCount = 0;
+    private static int pairsFound = 0;
     private static JLabel moveCounterLabel;
 
     public static void main(String[] args) {
@@ -51,7 +52,6 @@ public class MemoGame_copy {
             panel.add(cardButtons[i]);
         }
 
-        // Crear y añadir el contador de movimientos
         moveCounterLabel = new JLabel("Movimientos: 0");
         JPanel topPanel = new JPanel();
         topPanel.add(moveCounterLabel);
@@ -59,13 +59,8 @@ public class MemoGame_copy {
         frame.add(topPanel, BorderLayout.NORTH);
         frame.add(panel, BorderLayout.CENTER);
 
-        // Crear la barra de menú
         JMenuBar menuBar = new JMenuBar();
-
-        // Crear el menú "Juego"
         JMenu gameMenu = new JMenu("Juego");
-
-        // Crear y añadir el ítem "Reiniciar"
         JMenuItem restartItem = new JMenuItem("Reiniciar");
         restartItem.addActionListener(new ActionListener() {
             @Override
@@ -75,7 +70,6 @@ public class MemoGame_copy {
         });
         gameMenu.add(restartItem);
 
-        // Crear y añadir el ítem "Finalizar"
         JMenuItem exitItem = new JMenuItem("Finalizar");
         exitItem.addActionListener(new ActionListener() {
             @Override
@@ -84,30 +78,21 @@ public class MemoGame_copy {
             }
         });
         gameMenu.add(exitItem);
-
-        // Añadir el menú "Juego" a la barra de menú
         menuBar.add(gameMenu);
 
-        // Crear el menú "Información"
         JMenu infoMenu = new JMenu("Información");
-
-        // Crear y añadir el ítem "Acerca de"
         JMenuItem aboutItem = new JMenuItem("Memory Game Espacial, creado por Jose, Alex y Aurora, los mejores!");
         infoMenu.add(aboutItem);
-
-        // Añadir el menú "Información" a la barra de menú
         menuBar.add(infoMenu);
 
-        // Establecer la barra de menú en el frame
         frame.setJMenuBar(menuBar);
-
         frame.setVisible(true);
     }
 
     private static void loadCardImagesFromDatabase() {
         try (Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
              PreparedStatement pstmt = conn.prepareStatement(SQL_QUERY)) {
-            pstmt.setInt(1, NUM_CARDS / 2); // Selecciona la mitad de las imágenes necesarias
+            pstmt.setInt(1, NUM_CARDS / 2);
             ResultSet rs = pstmt.executeQuery();
 
             cardImages = new ArrayList<>();
@@ -115,10 +100,9 @@ public class MemoGame_copy {
                 byte[] imageData = rs.getBytes("image");
                 String name = rs.getString("name");
                 ImageIcon icon = new ImageIcon(imageData);
-                icon.setDescription(name); // Establece la descripción como el nombre de la imagen
+                icon.setDescription(name);
                 cardImages.add(icon);
 
-                // Crea una copia para el par y también establece la descripción
                 ImageIcon iconCopy = new ImageIcon(imageData);
                 iconCopy.setDescription(name);
                 cardImages.add(iconCopy);
@@ -128,9 +112,8 @@ public class MemoGame_copy {
                 throw new RuntimeException("No hay suficientes imágenes en la base de datos para crear pares de cartas.");
             }
 
-            Collections.shuffle(cardImages); // Baraja las cartas
+            Collections.shuffle(cardImages);
 
-            // Carga la imagen del dorso desde la base de datos
             loadBackImageFromDatabase();
 
         } catch (Exception e) {
@@ -159,6 +142,15 @@ public class MemoGame_copy {
         return new ImageIcon(scaledImage);
     }
 
+    private static ImageIcon loadImageIconFromURL(String url) {
+        try {
+            return new ImageIcon(url);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     private static class CardClickListener implements ActionListener {
         private int index;
 
@@ -175,17 +167,15 @@ public class MemoGame_copy {
                 secondCardIndex = index;
                 cardButtons[index].setIcon(scaleImageIcon(cardImages.get(index), cardButtons[index].getSize()));
 
-                // Incrementar y actualizar el contador de movimientos
                 moveCount++;
                 moveCounterLabel.setText("Movimientos: " + moveCount);
 
-                // Verificar si las cartas coinciden
                 if (cardImages.get(firstCardIndex).getDescription().equals(cardImages.get(secondCardIndex).getDescription())) {
-                    // Cartas coinciden, se dejan descubiertas
+                    pairsFound++;
                     firstCardIndex = -1;
                     secondCardIndex = -1;
+                    checkGameWon();
                 } else {
-                    // Cartas no coinciden, se voltean después de un breve retraso
                     Timer timer = new Timer(1000, new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
@@ -200,19 +190,40 @@ public class MemoGame_copy {
                 }
             }
         }
+
+        private static void checkGameWon() {
+            if (pairsFound == NUM_CARDS / 2) {
+                // Crear un panel personalizado que contenga el GIF
+                JPanel panel = new JPanel();
+                panel.setLayout(new BorderLayout()); // Establecer un BorderLayout para el panel
+
+               
+
+                // Cargar el GIF desde una URL
+                ImageIcon winGif = loadImageIconFromURL(WIN_GIF_URL);
+                JLabel gifLabel = new JLabel(winGif);
+
+                JLabel winLabel = new JLabel(winGif, SwingConstants.CENTER); // Centrar el texto
+                
+                panel.add(winLabel, BorderLayout.NORTH); // Añadir el texto en la parte superior
+                panel.add(gifLabel, BorderLayout.CENTER); // Añadir el GIF en el centro
+
+                // Mostrar el panel dentro de un JOptionPane
+                JOptionPane.showMessageDialog(null, panel,"¡¡FELICIDADES, HAS GANADO!!", JOptionPane.PLAIN_MESSAGE);
+            }
+        }
+
     }
 
     private static void restartGame() {
-        // Reiniciar las variables del juego
         firstCardIndex = -1;
         secondCardIndex = -1;
         moveCount = 0;
+        pairsFound = 0;
         moveCounterLabel.setText("Movimientos: 0");
 
-        // Barajar las cartas nuevamente
         Collections.shuffle(cardImages);
 
-        // Volver a poner todas las cartas boca abajo
         Dimension buttonSize = new Dimension(cardButtons[0].getWidth(), cardButtons[0].getHeight());
         for (int i = 0; i < NUM_CARDS; i++) {
             cardButtons[i].setIcon(scaleImageIcon(backImage, buttonSize));

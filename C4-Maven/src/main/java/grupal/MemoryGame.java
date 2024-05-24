@@ -34,6 +34,7 @@ public class MemoryGame {
         JFrame frame = new JFrame("Juego de Memoria");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
+        frame.setLocationRelativeTo(null);
 
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(ROWS, COLS));

@@ -1,0 +1,27 @@
+CREATE DATABASE db_images2;
+ USE db_images2; 
+
+CREATE TABLE memes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    image LONGBLOB NOT NULL
+);
+ 
+ // insercción de imagenes en la base de datos 
+ INSERT INTO memes (name, image) VALUES ('MEME1A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME1A.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME1B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME1B.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME2A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME2A.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME2B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME2B.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME3A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME3A.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME3B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME3B.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME4A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME4A.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME4B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME4B.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME5A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME5A.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME5B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME5B.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME6A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME6A .jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME6B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME6B.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME7A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME7A.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME7B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME7B.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME8A', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME8A.jpg'));
+INSERT INTO memes (name, image) VALUES ('MEME8B', LOAD_FILE('C:\Users\Aurora\Desktop\ACADEMICO\TechTalent\memes\memes\MEME8B.jpg'));
+
