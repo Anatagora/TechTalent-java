@@ -58,6 +58,49 @@ public class MemoryGame {
 
         frame.add(topPanel, BorderLayout.NORTH);
         frame.add(panel, BorderLayout.CENTER);
+
+        // Crear la barra de menú
+        JMenuBar menuBar = new JMenuBar();
+
+        // Crear el menú "Juego"
+        JMenu gameMenu = new JMenu("Juego");
+
+        // Crear y añadir el ítem "Reiniciar"
+        JMenuItem restartItem = new JMenuItem("Reiniciar");
+        restartItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                restartGame();
+            }
+        });
+        gameMenu.add(restartItem);
+
+        // Crear y añadir el ítem "Finalizar"
+        JMenuItem exitItem = new JMenuItem("Finalizar");
+        exitItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        gameMenu.add(exitItem);
+
+        // Añadir el menú "Juego" a la barra de menú
+        menuBar.add(gameMenu);
+
+        // Crear el menú "Información"
+        JMenu infoMenu = new JMenu("Información");
+
+        // Crear y añadir el ítem "Acerca de"
+        JMenuItem aboutItem = new JMenuItem("Memory Game Espacial, creado por Jose, Alex y Aurora, los mejores!");
+        infoMenu.add(aboutItem);
+
+        // Añadir el menú "Información" a la barra de menú
+        menuBar.add(infoMenu);
+
+        // Establecer la barra de menú en el frame
+        frame.setJMenuBar(menuBar);
+
         frame.setVisible(true);
     }
 
@@ -158,7 +201,21 @@ public class MemoryGame {
             }
         }
     }
+
+    private static void restartGame() {
+        // Reiniciar las variables del juego
+        firstCardIndex = -1;
+        secondCardIndex = -1;
+        moveCount = 0;
+        moveCounterLabel.setText("Movimientos: 0");
+
+        // Barajar las cartas nuevamente
+        Collections.shuffle(cardImages);
+
+        // Volver a poner todas las cartas boca abajo
+        Dimension buttonSize = new Dimension(cardButtons[0].getWidth(), cardButtons[0].getHeight());
+        for (int i = 0; i < NUM_CARDS; i++) {
+            cardButtons[i].setIcon(scaleImageIcon(backImage, buttonSize));
+        }
+    }
 }
-
-
-
