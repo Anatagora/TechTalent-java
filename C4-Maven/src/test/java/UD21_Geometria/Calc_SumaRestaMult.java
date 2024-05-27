@@ -6,8 +6,8 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class Calc_SumaRestaMult 
-{
+public class Calc_SumaRestaMult
+	{
 
 	static double op1;
 	static double op2;
@@ -27,20 +27,20 @@ public class Calc_SumaRestaMult
 		double calculado = op1 + op2;
 		assertEquals(esperado, calculado);
 	}
-	
+
 	@Test
 	void testResta() {
-		
+
 		double esperado = 1;
 		double calculado = op1 - op2;
 		assertEquals(esperado, calculado);
 	}
-	
+
 	@Test
 	void testMultiplicacion() {
 		double esperado = 6;
 		double calculado = op1 * op2;
 		assertEquals(esperado, calculado);
-		
+
 	}
 }
