@@ -7,7 +7,6 @@ INDEX VERSION 1.134+C:\Users\Aurora\Documents\Repositorios\TechTalent-java\.meta
 3430428172.index
 3413725848.index
 1865797976.index
-4083564458.index
 4236645949.index
 3313416848.index
 471018551.index
