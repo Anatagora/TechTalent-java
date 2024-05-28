@@ -15,4 +15,10 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
     <fullyQualifiedTypeName name="UD21_JUnit_Geometria.Geometria"/>
+    <fullyQualifiedTypeName name="UD21_JUnit_Geometria.Calculadora_Grupo"/>
+    <fullyQualifiedTypeName name="UD21_JUnit_Geometria.LogicCalculadora"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VistaEditar"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VistaEliminar"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VistaAgregar"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VistaPrincipal"/>
 </qualifiedTypeNameHistroy>
