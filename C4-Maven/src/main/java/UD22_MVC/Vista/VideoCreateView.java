@@ -6,7 +6,6 @@ import UD22_MVC.controlador.ClienteController;
 import UD22_MVC.controlador.VideoController;
 import UD22_MVC.modelo.Cliente;
 import UD22_MVC.modelo.Video;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
