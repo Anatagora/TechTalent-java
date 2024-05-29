@@ -17,7 +17,8 @@ import java.awt.event.ActionListener;
 public class MainFrame extends JFrame {
     public MainFrame() {
         setTitle("Sistema de Gestión de Clientes y Videos");
-        setSize(500, 400);
+        setSize(550, 350);
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
 
