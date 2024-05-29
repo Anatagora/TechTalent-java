@@ -17,7 +17,7 @@ public class ClienteController {
         return Cliente.getClienteById(id);
     }
 
-    public void updateCliente(Cliente cliente) {
+    public static void updateCliente(Cliente cliente) {
         cliente.updateCliente();
     }
 
