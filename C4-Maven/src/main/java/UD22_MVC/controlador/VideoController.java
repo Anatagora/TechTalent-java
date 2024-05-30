@@ -24,5 +24,7 @@ public class VideoController {
     public void deleteVideo(int id) {
         Video.deleteVideo(id);
     }
+    
+    
 }
 

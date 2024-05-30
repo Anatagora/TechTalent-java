@@ -60,6 +60,9 @@ public class Video {
         this.cli_id = cli_id;
     }
 
+    public String toString() {
+        return title;  // Mostrar el título del video en el JComboBox
+    }
     // Métodos de acceso a datos
     public void addVideo() {
         String sql = "INSERT INTO videos (title, director, cli_id) VALUES (?, ?, ?)";
