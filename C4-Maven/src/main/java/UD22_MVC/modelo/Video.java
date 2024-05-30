@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.mysql.cj.xdevapi.Statement;
+
 import UD22_MVC.controlador.conexion_database;
 
 public class Video {
@@ -136,5 +138,20 @@ public class Video {
             e.printStackTrace();
         }
     }
+    
+ // Método para obtener todos los IDs de los videos
+    public static List<Integer> getAllVideoIds() {
+        List<Integer> ids = new ArrayList<>();
+        String sql = "SELECT id FROM videos";
+        try (Connection conn = conexion_database.getConnection(); 
+             PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            while (rs.next()) {
+                ids.add(rs.getInt("id"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ids;
+    }
 }
-
