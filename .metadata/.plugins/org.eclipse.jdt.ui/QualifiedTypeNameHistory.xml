@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="java.nio.file.FileSystemNotFoundException"/>
@@ -21,4 +20,18 @@
     <fullyQualifiedTypeName name="UD22_MVC.Vista.VistaEliminar"/>
     <fullyQualifiedTypeName name="UD22_MVC.Vista.VistaAgregar"/>
     <fullyQualifiedTypeName name="UD22_MVC.Vista.VistaPrincipal"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="UD22_MVC.controlador.conexion_database"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.ClienteCreateView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.ClienteReadView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.ClienteUpdateView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.ClienteDeleteView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VideoCreateView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VideoReadView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VideoUpdateView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Vista.VideoDeleteView"/>
+    <fullyQualifiedTypeName name="UD22_MVC.controlador.VideoController"/>
+    <fullyQualifiedTypeName name="UD22_MVC.modelo.Video"/>
+    <fullyQualifiedTypeName name="UD22_MVC.controlador.ClienteController"/>
+    <fullyQualifiedTypeName name="UD22_MVC.modelo.Cliente"/>
 </qualifiedTypeNameHistroy>
