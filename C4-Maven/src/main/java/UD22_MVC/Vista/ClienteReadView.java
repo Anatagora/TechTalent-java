@@ -21,6 +21,7 @@ public class ClienteReadView extends JFrame {
 
         JTextArea textArea = new JTextArea();
         textArea.setEditable(false);
+        textArea.setFont(new Font("Arial", Font.PLAIN, 16)); // Cambiar la fuente y el tamaño del texto
         JScrollPane scrollPane = new JScrollPane(textArea);
         add(scrollPane, BorderLayout.CENTER);
 
