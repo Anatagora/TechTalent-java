@@ -19,9 +19,11 @@ public class VideoUpdateView extends JFrame {
 		videoController = new VideoController();
 		setTitle("Actualizar Video");
 		setSize(400, 300);
+		setLocationRelativeTo(null);
 		setLayout(new GridLayout(0, 2));
 
 		idComboBox = new JComboBox<>();
+		idComboBox.addItem(null); // Agregar elemento predeterminado
 		titleField = new JTextField();
 		directorField = new JTextField();
 		cliIdField = new JTextField();

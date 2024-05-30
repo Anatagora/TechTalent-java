@@ -17,6 +17,7 @@ public class ClienteDeleteView extends JFrame {
         clienteController = new ClienteController();
         setTitle("Eliminar Cliente");
         setSize(400, 150);
+        setLocationRelativeTo(null);
         setLayout(new GridLayout(0, 2));
 
         // ComboBox para listar los clientes

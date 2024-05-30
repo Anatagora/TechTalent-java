@@ -17,6 +17,7 @@ public class VideoReadView extends JFrame {
         VideoController = new VideoController();
         setTitle("Mostrar Todos los Videos");
         setSize(400, 300);
+        setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
         JTextArea textArea = new JTextArea();

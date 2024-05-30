@@ -15,6 +15,7 @@ public class ClienteCreateView extends JFrame {
         clienteController = new ClienteController();
         setTitle("Agregar Cliente");
         setSize(400, 300);
+        setLocationRelativeTo(null);
         
         // Asegúrate de usar un GridLayout desde el inicio
         setLayout(new GridLayout(8, 2));

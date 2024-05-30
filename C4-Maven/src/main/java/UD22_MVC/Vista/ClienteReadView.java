@@ -17,6 +17,7 @@ public class ClienteReadView extends JFrame {
         clienteController = new ClienteController();
         setTitle("Mostrar Todos los Clientes");
         setSize(400, 300);
+        setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
         JTextArea textArea = new JTextArea();

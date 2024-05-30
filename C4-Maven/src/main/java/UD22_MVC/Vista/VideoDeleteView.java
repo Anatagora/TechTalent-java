@@ -15,6 +15,7 @@ public class VideoDeleteView extends JFrame {
         videoController = new VideoController();
         setTitle("Eliminar Video");
         setSize(400, 150);
+        setLocationRelativeTo(null);
         setLayout(new GridLayout(0, 2));
 
         // Crear y poblar el JComboBox con los videos existentes

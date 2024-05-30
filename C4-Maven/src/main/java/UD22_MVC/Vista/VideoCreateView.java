@@ -18,6 +18,7 @@ public class VideoCreateView extends JFrame {
         videoController = new VideoController();
         setTitle("Agregar Video");
         setSize(400, 300);
+        setLocationRelativeTo(null);
 
         // Asegúrate de establecer GridLayout
         setLayout(new GridLayout(5, 2)); // 5 filas y 2 columnas
