@@ -39,7 +39,7 @@ public class ActualizarAsignadoAView extends JFrame {
                 AsignadoA asignadoA = (AsignadoA) asignadoAComboBox.getSelectedItem();
                 String idProyecto = proyectoComboBox.getSelectedItem().toString();
                 AsignadoAController controller = new AsignadoAController();
-                controller.updateAsignadoA(asignadoA.getIdProyecto(), asignadoA.getDNI(), idProyecto);
+                controller.updateAsignadoA(asignadoA.getIdProyecto(), asignadoA.getdni_cientifico(), idProyecto);
                 JOptionPane.showMessageDialog(null, "Asignación actualizada exitosamente!");
                 dispose();
             }
@@ -49,11 +49,19 @@ public class ActualizarAsignadoAView extends JFrame {
     }
 
     private void cargarAsignaciones() {
-        // Código para cargar las asignaciones en el JComboBox
+        AsignadoAController controller = new AsignadoAController();
+        List<AsignadoA> asignaciones = controller.getAllAsignados();
+        for (AsignadoA asignacion : asignaciones) {
+            asignadoAComboBox.addItem(asignacion);
+        }
     }
 
     private void cargarProyectos() {
-        // Código para cargar los nombres de los proyectos en el JComboBox
+        ProyectoController controller = new ProyectoController();
+        List<Proyecto> proyectos = controller.getAllProyectos();
+        for (Proyecto proyecto : proyectos) {
+            proyectoComboBox.addItem(proyecto.getNombre());
+        }
     }
 }
 
