@@ -26,7 +26,5 @@ public class AsignadoAController {
     public void deleteAsignadoA(String idProyecto, String DNI) {
         AsignadoA.deleteAsignadoA(idProyecto, DNI);
     }
-    public String toString() {
-        return dni_cientifico;
-    }
+    
 }
