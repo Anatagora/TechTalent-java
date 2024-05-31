@@ -47,7 +47,7 @@ public class ClienteCreateView extends JFrame {
                 if (nombreField.getText().isEmpty() || apellido1Field.getText().isEmpty() 
                         || dniField.getText().isEmpty() || fechaField.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null, 
-                            "Todos los campos obligatorios deben ser llenados.", "Error", 
+                            "Todos los campos obligatorios deben ser rellenados.", "Error", 
                             JOptionPane.ERROR_MESSAGE);
                     return;
                 }

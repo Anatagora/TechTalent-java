@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
     <fullyQualifiedTypeName name="UD21_JUnit_Geometria.Geometria"/>
     <fullyQualifiedTypeName name="UD21_JUnit_Geometria.Calculadora_Grupo"/>
     <fullyQualifiedTypeName name="UD21_JUnit_Geometria.LogicCalculadora"/>
@@ -34,4 +33,10 @@
     <fullyQualifiedTypeName name="UD22_MVC.modelo.Video"/>
     <fullyQualifiedTypeName name="UD22_MVC.controlador.ClienteController"/>
     <fullyQualifiedTypeName name="UD22_MVC.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
 </qualifiedTypeNameHistroy>
