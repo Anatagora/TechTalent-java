@@ -2,6 +2,8 @@ package UD22_MVC.Ejercicio3.Vistas;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
+
 import javax.swing.*;
 import UD22_MVC.Ejercicio3.Controller.AsignadoAController;
 import UD22_MVC.Ejercicio3.Modelo.AsignadoA;
@@ -32,7 +34,7 @@ public class EliminarAsignadoAView extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 AsignadoA asignadoA = (AsignadoA) asignadoAComboBox.getSelectedItem();
                 AsignadoAController controller = new AsignadoAController();
-                controller.deleteAsignadoA(asignadoA.getIdProyecto(), asignadoA.getDNI());
+                controller.deleteAsignadoA(asignadoA.getIdProyecto(), asignadoA.getdni_cientifico());
                 JOptionPane.showMessageDialog(null, "Asignación eliminada exitosamente!");
                 dispose();
             }
@@ -42,7 +44,11 @@ public class EliminarAsignadoAView extends JFrame {
     }
 
     private void cargarAsignaciones() {
-        // Código para cargar las asignaciones en el JComboBox
-    }
+        AsignadoAController controller = new AsignadoAController();
+        List<AsignadoA> asignaciones = AsignadoAController.getAllAsignados();
+        for (AsignadoA asignacion : asignaciones) {
+            asignadoAComboBox.addItem(asignacion);
+        }
+}
 }
 

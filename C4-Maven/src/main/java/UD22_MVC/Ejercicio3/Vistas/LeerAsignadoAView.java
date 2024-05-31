@@ -34,7 +34,7 @@ public class LeerAsignadoAView extends JFrame {
 
         StringBuilder sb = new StringBuilder();
         for (AsignadoA asignacion : asignaciones) {
-            sb.append("ID Proyecto: ").append(asignacion.getIdProyecto()).append(", DNI: ").append(asignacion.getDNI()).append("\n");
+            sb.append("ID Proyecto: ").append(asignacion.getIdProyecto()).append(", DNI: ").append(asignacion.getdni_cientifico()).append("\n");
         }
 
         textArea.setText(sb.toString());
