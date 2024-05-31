@@ -121,4 +121,7 @@ public class Cientifico {
             e.printStackTrace();
         }
     }
+    public String toString() {
+        return nom_apels; // Devuelve solo el nombre y apellidos para su representación en el JComboBox
+    }
 }
