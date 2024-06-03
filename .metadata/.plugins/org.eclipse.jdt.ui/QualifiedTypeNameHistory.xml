@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="UD21_JUnit_Geometria.Geometria"/>
     <fullyQualifiedTypeName name="UD21_JUnit_Geometria.Calculadora_Grupo"/>
@@ -39,4 +38,10 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Ejercicio3.Controller.conexion_database"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Ejercicio3.Modelo.AsignadoA"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Ejercicio3.Modelo.Proyecto"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Ejercicio3.Controller.CientificoController"/>
+    <fullyQualifiedTypeName name="UD22_MVC.Ejercicio3.Modelo.Cientifico"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

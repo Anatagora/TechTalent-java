@@ -4634,3 +4634,8 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact cn.org.thinkc
 2024-05-31 13:47:40,069 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Aurora\Documents\Repositorios\TechTalent-java\C4-Maven\src\test\resources
 2024-05-31 13:48:43,873 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Aurora\Documents\Repositorios\TechTalent-java\C4-Maven\src\main\resources
 2024-05-31 13:48:43,874 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Aurora\Documents\Repositorios\TechTalent-java\C4-Maven\src\test\resources
+2024-06-03 21:29:46,008 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-06-03 21:31:41,078 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Aurora\Documents\Repositorios\TechTalent-java\C4-Maven\src\main\resources
+2024-06-03 21:31:41,084 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Aurora\Documents\Repositorios\TechTalent-java\C4-Maven\src\test\resources
+2024-06-03 21:31:57,105 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Aurora\Documents\Repositorios\TechTalent-java\C4-Maven\src\main\resources
+2024-06-03 21:31:57,108 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Aurora\Documents\Repositorios\TechTalent-java\C4-Maven\src\test\resources

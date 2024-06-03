@@ -2,9 +2,13 @@ package UD22_MVC.Ejercicio3.Vistas;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
+
 import javax.swing.*;
 import UD22_MVC.Ejercicio3.Controller.AsignadoAController;
+import UD22_MVC.Ejercicio3.Controller.ProyectoController;
 import UD22_MVC.Ejercicio3.Modelo.AsignadoA;
+import UD22_MVC.Ejercicio3.Modelo.Proyecto;
 
 public class ActualizarAsignadoAView extends JFrame {
     private JComboBox<AsignadoA> asignadoAComboBox;
