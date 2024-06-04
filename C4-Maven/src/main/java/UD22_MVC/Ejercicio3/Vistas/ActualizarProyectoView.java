@@ -57,6 +57,7 @@ public class ActualizarProyectoView extends JFrame {
 
         setSize(350, 250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 }

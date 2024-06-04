@@ -30,6 +30,7 @@ public class ListarProyectosView extends JFrame {
 
         setSize(500, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 }
