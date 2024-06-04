@@ -54,9 +54,9 @@ public class Main extends JFrame {
             case "Científicos":
                 handleCientificos(choice);
                 break;
-//            case "Proyectos":
-//                handleProyectos(choice);
-//                break;
+            case "Proyectos":
+                handleProyectos(choice);
+                break;
             case "Asignado_a":
                 handleAsignados(choice);
                 break;
@@ -86,27 +86,27 @@ public class Main extends JFrame {
         }
     }
 
-//    private void handleProyectos(int choice) {
-//        switch (choice) {
-//            case 0:
-//                new CrearProyectoView().setVisible(true);
-//                break;
-//            case 1:
-//                new LeerProyectoView().setVisible(true);
-//                break;
-//            case 2:
-//                new ActualizarProyectoView().setVisible(true);
-//                break;
-//            case 3:
-//                new EliminarProyectoView().setVisible(true);
-//                break;
-//            case 4:
-//                break; // Volver
-//            default:
-//                System.out.println("Opción no válida");
-//        }
-//    }
-//
+    private void handleProyectos(int choice) {
+        switch (choice) {
+            case 0:
+                new CrearProyectoView().setVisible(true);
+                break;
+            case 1:
+                new ListarProyectosView().setVisible(true);
+                break;
+            case 2:
+                new ActualizarProyectoView().setVisible(true);
+                break;
+            case 3:
+                new EliminarProyectoView().setVisible(true);
+                break;
+            case 4:
+                break; // Volver
+            default:
+                System.out.println("Opción no válida");
+        }
+    }
+
     private void handleAsignados(int choice) {
         switch (choice) {
             case 0:
