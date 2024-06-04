@@ -29,7 +29,7 @@ public class ListarProyectosView extends JFrame {
         add(scrollPane, BorderLayout.CENTER);
 
         setSize(500, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
     }
