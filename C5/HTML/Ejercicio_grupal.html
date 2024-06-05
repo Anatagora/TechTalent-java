@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina del grupo AJA</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#ef6464e6, #bbc17a);
+          }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .list-group {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .list-group-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .list-group-item:last-child {
+            border-bottom: none;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .form {
+            margin-top: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-control:focus {
+            border-color: #aaa;
+            box-shadow: 0 0 10px rgba(144, 127, 127, 0.1);
+        }
+        .form-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-btn:hover {
+            background-color: #3e8e41;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleForm() {
+            var form = document.getElementById("contactForm");
+            if (form.classList.contains("hidden")) {
+                form.classList.remove("hidden");
+            } else {
+                form.classList.add("hidden");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Proyecto Grupal</h1>
+        <p>
+            ¡Atención a todos los seres de la galaxia, tanto humanos como extraterrestres! 🌈✨<br><br>
+            Nos complace anunciar el evento más espectacular del año: ¡La Fiesta del Orgullo Interespecie LGTBIQ+! Únete a nosotros para una celebración épica que no solo honra la diversidad y el amor en todas sus formas, sino que también promueve la paz y la unidad en todo el cosmos. 🚀🌌<br><br>
+            Fecha: [Inserta fecha aquí]<br>
+            Lugar: [Inserta lugar aquí]<br><br>
+            En esta fiesta inolvidable, derribaremos barreras y construiremos puentes entre todas las especies, celebrando la rica diversidad de nuestros mundos. Prepárate para una noche llena de colores vibrantes, música galáctica, y un ambiente donde el amor y la inclusión no conocen límites.<br><br>
+            ¿Qué te espera en la Fiesta del Orgullo Interespecie?<br><br>
+            🎉 Espectáculos Intergalácticos: Artistas de diferentes planetas y dimensiones ofrecerán presentaciones únicas y emocionantes.<br><br>
+            🎵 Música Cósmica: DJ’s interestelares mezclarán ritmos de toda la galaxia, asegurando que no pares de bailar.<br><br>
+            💫 Zona de Convivencia: Un espacio especial donde humanos y extraterrestres pueden conocerse, compartir historias y aprender unos de otros.<br><br>
+            🌍 Comida y Bebidas Universales: Degusta delicias culinarias de todos los rincones del universo, ¡una experiencia sensorial que no querrás perderte!<br><br>
+            🏳️‍🌈 Desfile del Orgullo Interestelar: Una marcha espectacular que recorrerá [inserta ubicación], mostrando con orgullo los colores y la diversidad de todos los seres del cosmos.<br><br>
+            🎁 Sorpresas y Premios: ¡Increíbles premios para los asistentes más creativos y mejor disfrazados!<br><br>
+            Esta fiesta no es solo un evento, es una declaración de amor y respeto hacia todos los seres vivos, sin importar de qué planeta provengan. Juntos, podemos crear un universo más justo y pacífico para todos.<br><br>
+            ¡Compra tus entradas ahora y sé parte de esta celebración histórica! 🌠✨<br><br>
+            No importa de dónde vengas, si eres humano o extraterrestre, en la Fiesta del Orgullo Interespecie LGTBIQ+ hay un lugar especial para ti. ¡Nos vemos en la pista de baile bajo las estrellas!<br><br>
+            Ensalzando la diversidad, promoviendo la paz. ¡Únete a la revolución interestelar!<br><br>
+            [Enlace para comprar entradas]<br><br>
+            ¡No te lo pierdas! 🌌❤️🛸
+        </p>
+        <h2>Miembros del grupo</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Aurora</li>
+            <li class="list-group-item">Jose</li>
+            <li class="list-group-item">Ana Maria</li>
+        </ul>
+        <h2>Imágenes</h2>
+        <div class="image-grid">
+            <img src="imagen1.jpeg" alt="Imagen 1">
+            <img src="imagen2.jpeg" alt="Imagen 2">
+            <img src="imagen3.jpeg" alt="Imagen 3">
+        </div>
+        <h2>Formulario de contacto</h2>
+        <button onclick="toggleForm()" class="form-btn">Mostrar</button>
+        <div id="contactForm" class="hidden">
+            <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control"><br><br>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" class="form-control"><br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" class="form-control"></textarea><br><br>
+            <input type="submit" value="Enviar" class="form-btn">
+            </form>
+            <!-- Botón para redireccionar a otra página -->
+            <br><br><button onclick="window.location.href = 'otra_pagina.html';" class="form-btn">Ir a Otra Página</button>
+            </div>
+            
+            </body>
+            </html>
