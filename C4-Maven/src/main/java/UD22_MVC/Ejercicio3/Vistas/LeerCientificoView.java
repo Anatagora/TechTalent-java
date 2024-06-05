@@ -35,7 +35,7 @@ public class LeerCientificoView extends JFrame {
                 if (cientificos != null && !cientificos.isEmpty()) {
                     StringBuilder sb = new StringBuilder();
                     for (Cientifico cientifico : cientificos) {
-                        sb.append("DNI: ").append(cientifico.getDNI()).append("\tNombre: ").append(cientifico.getNomApels()).append("\n");
+                        sb.append("DNI: ").append(cientifico.getdni_cientifico()).append("\tNombre: ").append(cientifico.getNomApels()).append("\n");
                     }
                     resultArea.setText(sb.toString());
                 } else {

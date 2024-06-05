@@ -23,11 +23,11 @@ public class Cientifico {
     }
 
     // Getters y setters
-    public String getDNI() {
+    public String getdni_cientifico() {
         return dni_cientifico;
     }
 
-    public void setDNI(String DNI) {
+    public void setdni_cientifico(String DNI) {
         this.dni_cientifico = DNI;
     }
 
@@ -57,9 +57,9 @@ public class Cientifico {
     }
     
     public void addCientifico() {
-        String sql = "INSERT INTO cientificos (DNI, nom_apels) VALUES (?, ?)";
+        String sql = "INSERT INTO cientificos (dni_cientifico, nom_apels) VALUES (?, ?)";
         try (Connection conn = conexion_database.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, this.getDNI());
+            stmt.setString(1, this.getdni_cientifico());
             stmt.setString(2, this.getNomApels());
             stmt.executeUpdate();
         } catch (SQLException e) {
@@ -73,7 +73,7 @@ public class Cientifico {
         try (Connection conn = conexion_database.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql); ResultSet rs = stmt.executeQuery()) {
             while (rs.next()) {
                 Cientifico cientifico = new Cientifico();
-                cientifico.setDNI(rs.getString("dni_cientifico"));
+                cientifico.setdni_cientifico(rs.getString("dni_cientifico"));
                 cientifico.setNomApels(rs.getString("nom_apels"));
                 cientificos.add(cientifico);
             }
@@ -83,15 +83,15 @@ public class Cientifico {
         return cientificos;
     }
 
-    public static Cientifico getCientificoByDNI(String DNI) {
+    public static Cientifico getCientificoByDNI(String dni_cientifico) {
         Cientifico cientifico = null;
         String sql = "SELECT * FROM cientificos WHERE dni_cientifico = ?";
         try (Connection conn = conexion_database.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, DNI);
+            stmt.setString(1, dni_cientifico);
             try (ResultSet rs = stmt.executeQuery()) {
                 if (rs.next()) {
                     cientifico = new Cientifico();
-                    cientifico.setDNI(rs.getString("dni_cientifico"));
+                    cientifico.setdni_cientifico(rs.getString("dni_cientifico"));
                     cientifico.setNomApels(rs.getString("nom_apels"));
                 }
             }
@@ -102,20 +102,20 @@ public class Cientifico {
     }
 
     public void updateCientifico() {
-        String sql = "UPDATE cientificos SET nom_apels = ? WHERE DNI = ?";
+        String sql = "UPDATE cientificos SET nom_apels = ? WHERE dni_cientifico = ?";
         try (Connection conn = conexion_database.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, this.getNomApels());
-            stmt.setString(2, this.getDNI());
+            stmt.setString(2, this.getdni_cientifico());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public static void deleteCientifico(String DNI) {
+    public static void deleteCientifico(String dni_cientifico) {
         String sql = "DELETE FROM cientificos WHERE dni_cientifico = ?";
         try (Connection conn = conexion_database.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, DNI);
+            stmt.setString(1, dni_cientifico);
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
