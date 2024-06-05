@@ -39,7 +39,7 @@ public class CrearAsignadoAView extends JFrame {
                 AsignadoAController controller = new AsignadoAController();
                 controller.addAsignadoA(idProyecto, DNI);
                 JOptionPane.showMessageDialog(null, "Asignación agregada exitosamente!");
-                dispose();
+                proyectoField.setText("");
             }
         });
 

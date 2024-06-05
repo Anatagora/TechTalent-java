@@ -8,7 +8,7 @@ import UD22_MVC.Ejercicio3.Controller.CientificoController;
 import UD22_MVC.Ejercicio3.Modelo.Cientifico;
 
 public class ActualizarCientificoView extends JFrame {
-    private JComboBox<Cientifico> cientificoComboBox;
+    private JComboBox<String> cientificoComboBox;
     private JTextField nombreField;
     private JButton submitButton;
 
@@ -36,12 +36,11 @@ public class ActualizarCientificoView extends JFrame {
         submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Cientifico cientifico = (Cientifico) cientificoComboBox.getSelectedItem(); // Obtiene el científico seleccionado
+                String dniCientifico = (String) cientificoComboBox.getSelectedItem(); // Obtiene el dni_cientifico seleccionado
                 String nuevoNombre = nombreField.getText();
-                CientificoController controller = new CientificoController();
-                controller.updateCientifico(cientifico.getdni_cientifico(), nuevoNombre);
+                CientificoController.updateCientifico(dniCientifico, nuevoNombre);
                 JOptionPane.showMessageDialog(null, "Científico actualizado exitosamente!");
-                dispose(); // Cierra esta ventana después de la acción
+                nombreField.setText("");
             }
         });
 
@@ -50,10 +49,18 @@ public class ActualizarCientificoView extends JFrame {
 
     // Método para cargar los científicos disponibles en el JComboBox
     private void cargarCientificos() {
-        CientificoController controller = new CientificoController();
-        List<Cientifico> cientificos = controller.getAllCientificos();
+        List<Cientifico> cientificos = CientificoController.getAllCientificos();
         for (Cientifico cientifico : cientificos) {
-            cientificoComboBox.addItem(cientifico);
+            cientificoComboBox.addItem(cientifico.getdni_cientifico());
         }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new ActualizarCientificoView().setVisible(true);
+            }
+        });
     }
 }
