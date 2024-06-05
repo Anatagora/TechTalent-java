@@ -39,7 +39,7 @@ public class ActualizarCientificoView extends JFrame {
                 Cientifico cientifico = (Cientifico) cientificoComboBox.getSelectedItem(); // Obtiene el científico seleccionado
                 String nuevoNombre = nombreField.getText();
                 CientificoController controller = new CientificoController();
-                controller.updateCientifico(cientifico.getDNI(), nuevoNombre);
+                controller.updateCientifico(cientifico.getdni_cientifico(), nuevoNombre);
                 JOptionPane.showMessageDialog(null, "Científico actualizado exitosamente!");
                 dispose(); // Cierra esta ventana después de la acción
             }
