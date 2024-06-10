@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones y líneas generales de un documento HTML5</title>
+    <style>
+        body {
+            background-color: #ADD8E6; /* Color azul claro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Secciones y líneas generales de un documento HTML5</h1>
+    </header>
+    <main>
+        <section>
+            <p>
+               La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.
+            </p>
+        </section>
+        <section>
+            <h2>Problemas resueltos por HTML5</h2>
+            <p>
+                La definición de la estructura de un documento en HTML4 y su algoritmo de perfilado es muy tosco y genera numerosos problemas:
+            </p>
+            <ol>
+                <li>
+                    HTML5 quita la necesidad de elementos <code>&lt;div&gt;</code> para definir secciones semánticas sin definir valores específicos para los atributos <code>class</code>, introduciendo un nuevo elemento, <code>&lt;header&gt;</code>, el elemento de sección HTML.
+                </li>
+                <li>
+                    Mezclar varios documentos es difícil: la inclusión de un sub-documento en un documento principal. Esto se resuelve en HTML5 con los elementos de seccionado (<code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code> y <code>&lt;aside&gt;</code>).
+                </li>
+                <li>
+                    HTML5 introduce el elemento <code>&lt;hgroup&gt;</code> que oculta todos los elementos de cabecera excepto el primero de más alto rango (por ejemplo, <code>&lt;hgroup&gt;</code><code>&lt;h1&gt;Justine&lt;/h1&gt;<code>&lt;h2&gt;Les Malheurs de la Vertu&lt;/h2&gt;&lt;/hgroup&gt; crea el perfil 1, Justine).
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024. Techtalent - Tarragona. Aurora Socorro.</p>
+    </footer>
+</body>
+</html>

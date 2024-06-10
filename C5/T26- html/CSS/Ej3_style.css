@@ -1,0 +1,38 @@
+/* Ej3_style.css */
+
+/* Estilo para el encabezado h1 */
+header h1 {
+    background-color: #ffcc00; /* Fondo entre amarillo y naranja */
+    color: #030303; /* Letra grisácea */
+    font-weight: bold; /* Letra en negrita */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alineado a la izquierda */
+}
+
+/* Estilo para el encabezado h2 */
+h2 {
+    color: #1e586e; /* Color azul cielo */
+    font-weight: bold; /* Letra en negrita */
+    font-style: italic; /* Cursiva */
+}
+
+/* Estilo para el encabezado h3 */
+h3 {
+    color: #20404d; /* Color azul cielo */
+    font-size: 1em; /* Tamaño de letra igual al del body */
+}
+/* Ej3_style.css */
+
+/* Ej3_style.css */
+
+/* Estilo para el cuerpo con imagen de fondo */
+body {
+    background-image: url('https://media.istockphoto.com/id/1401917845/es/vector/ilustraci%C3%B3n-vectorial-batata-con-piel-roja-aislada-sobre-blanca-apta-para-carteles-p%C3%A1ginas.jpg?s=612x612&w=0&k=20&c=7NNXgFvrjXI_nQuQGIs-f4RUaCrKdr8WDfWz4XHlgtA='); /* URL de la imagen de fondo */
+    background-size: 400px 300px; /* Definir el tamaño manualmente: ancho x alto */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-position: center center; /* Centrar la imagen */
+    font-family: Arial, sans-serif; /* Fuente de texto alternativa */
+    color: #333; /* Color de texto */
+}
+
+
