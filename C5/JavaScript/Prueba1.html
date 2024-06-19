@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Ratón</title>
+    <style>
+        #miBoton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #miParrafo {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <button id="miBoton">Pasa el ratón por aquí</button>
+    <p id="miParrafo"></p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const boton = document.getElementById('miBoton');
+            const parrafo = document.getElementById('miParrafo');
+
+            boton.addEventListener('mouseover', () => {
+                parrafo.textContent = 'Has pasado el ratón por el botón.';
+            });
+
+            boton.addEventListener('mouseout', () => {
+                parrafo.textContent = '';
+            });
+        });
+    </script>
+</body>
+</html>
