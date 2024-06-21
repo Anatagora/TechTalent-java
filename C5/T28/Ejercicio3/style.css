@@ -24,10 +24,10 @@ body {
 }
 
 .main-content {
-    background-image: url('https://example.com/background.jpg');
+    background-image: url('images/cielo.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #6d4b4b;
     text-align: center;
     padding: 40px 20px;
 }
