@@ -5,11 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inicio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/cielo.jpeg'); /* Ruta relativa a la carpeta images */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Para que la imagen de fondo no se desplace con el contenido */
+        }
+    
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+    
+        .logo img {
+            max-width: 100px;
+        }
+    
+        .language a, .session a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #0078d4;
+        }
+    
+        .main-content {
+            padding: 50px;
+            margin-top: 80px; /* Aumentar el espacio en blanco entre la barra de búsqueda y la tabla */
+        }
+    
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center; /* Alinear el contenido al centro */
+        }
+    
+        .search-bar input {
+            width: 50%; /* Reducir el ancho del input */
+            max-width: 300px; /* Establecer un ancho máximo */
+            padding: 8px; /* Reducir el padding para hacerla más compacta */
+            font-size: 14px; /* Reducir el tamaño de la fuente si es necesario */
+        }
+        .news-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.news-item {
+    padding: 10px;
+    text-align: center;
+    border: none; /* Elimina los bordes de las celdas */
+}
+    
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    
+        .news-item p {
+            margin: 0;
+        }
+    
+        .footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0078d4;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="images/logo.png" alt="Logo Microsoft Bing" style="width: 20%; height: auto;">
+            <img src="images/logo.png" alt="Logo Microsoft Bing" style="width: 100%; height: auto;">
         </div>
         <nav class="language">
             <a href="#">català</a>
@@ -24,21 +102,26 @@
         <div class="search-bar">
             <input type="text" placeholder="Search...">
         </div>
-        <section class="news-grid">
-            <article class="news-item" style="background-image: url('images/e1.jpeg'); width: 50%; height: 100%;">
-                <p>Confirmam 24.475 contagios y 496 muertes en las últimas 24 horas</p>
-            </article>
-            
-            <article class="news-item" style="background-image: url('images/e2.jpeg'); width: 50%; height: 100%;">
-                <p>Una jueza tumba los presupuestos del Ayuntamiento de...</p>
-            </article>
-            <article class="news-item" style="background-image: url('images/e3.jpeg'); width: 50%; height: 100%;">
-                <p>El efecto 'Gambito de dama': las Corts Valencianes aprueban...</p>
-            </article>
-            <article class="news-item" style="background-image: url('images/e4.jpeg'); width: 50%; height: 100%;">
-                <p>Expertos reclaman un 'debate sosegado' sobre la ampliación del Pue...</p>
-            </article>
-        </section>
+        <table class="news-table">
+            <tr>
+                <td class="news-item">
+                    <img src="images/e1.jpeg" alt="Imagen e1">
+                    <p>Confirmam 24.475 contagios y 496 muertes en las últimas 24 horas</p>
+                </td>
+                <td class="news-item">
+                    <img src="images/e2.jpeg" alt="Imagen e2">
+                    <p>Una jueza tumba los presupuestos del Ayuntamiento de...</p>
+                </td>
+                <td class="news-item">
+                    <img src="images/e3.jpeg" alt="Imagen e3">
+                    <p>El efecto 'Gambito de dama': las Corts Valencianes aprueban...</p>
+                </td>
+                <td class="news-item">
+                    <img src="images/e4.jpeg" alt="Imagen e4">
+                    <p>Expertos reclaman un 'debate sosegado' sobre la ampliación del Pue...</p>
+                </td>
+            </tr>
+        </table>
     </main>
     <footer class="footer">
         <a href="#">Privacidad y cookies</a>
