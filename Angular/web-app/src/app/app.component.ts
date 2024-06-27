@@ -11,7 +11,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, AboutComponent, TermsComponent, PortfolioComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styles: ''
 })
 export class AppComponent {
   title = 'Mi primera app';
